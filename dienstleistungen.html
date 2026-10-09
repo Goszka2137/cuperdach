@@ -1,0 +1,2357 @@
+<!doctype html >
+<html xmlns="http://www.w3.org/1999/xhtml" lang="de"
+      class="ios-preview-native-scroll">
+<head>
+    <meta charset="utf-8">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+    window._currentDevice = 'desktop';
+    window.Parameters = window.Parameters || {
+        HomeUrl: 'https://www.cuperdach.ch/',
+
+        SystemID: 'EU_PRODUCTION',
+        SiteAlias: 'e256bf8e5d474bb1b94d236567d1e275',
+        SiteType: atob('RFVEQU9ORQ=='),
+        PublicationDate: 'Jun 03, 2025',
+        ExternalUid: 'OI9277473',
+        IsSiteMultilingual: false,
+        InitialPostAlias: '',
+        InitialPostPageUuid: '',
+        InitialDynamicItem: '',
+        DynamicPageInfo: {
+            isDynamicPage: false,
+            base64JsonRowData: 'null',
+        },
+        InitialPageAlias: 'dienstleistungen',
+        InitialPageUuid: '09dc7e8cf9524c0c872c2cf92e8ac212',
+        InitialPageId: '33837785',
+        InitialEncodedPageAlias: 'ZGllbnN0bGVpc3R1bmdlbg==',
+        InitialHeaderUuid: 'c2fee828fc3c4e57b30a9e94affb9018',
+        CurrentPageUrl: '',
+        IsCurrentHomePage: false,
+        AllowAjax: false,
+        AfterAjaxCommand: null,
+        HomeLinkText: 'Back To Home',
+        UseGalleryModule: false,
+        CurrentThemeName: 'Layout Theme',
+        ThemeVersion: '500000',
+        DefaultPageAlias: '',
+        RemoveDID: true,
+        WidgetStyleID: null,
+        IsHeaderFixed: false,
+        IsHeaderSkinny: false,
+        IsBfs: true,
+        StorePageAlias: 'null',
+        StorePagesUrls: 'e30=',
+        IsNewStore: 'false',
+        StorePath: '',
+        StoreId: 'null',
+        StoreVersion: 0,
+        StoreBaseUrl: '',
+        StoreCleanUrl: true,
+        StoreDisableScrolling: true,
+        IsStoreSuspended: false,
+        HasCustomDomain: true,
+        SimpleSite: false,
+        showCookieNotification: false,
+        cookiesNotificationMarkup: 'null',
+        translatedPageUrl: '',
+        isFastMigrationSite: false,
+        sidebarPosition: 'NA',
+        currentLanguage: 'de',
+        currentLocale: 'de',
+        NavItems: '{}',
+        errors: {
+            general: 'There was an error connecting to the page.<br/> Make sure you are not offline.',
+            password: 'Incorrect name/password combination',
+            tryAgain: 'Try again'
+        },
+        
+        mapConsent: {
+            message: 'Dieser Inhalt wird von einem Drittanbieter, {0}, bereitgestellt. Falls aktiviert, kann {0} Informationen \u00FCber Ihre Aktivit\u00E4ten sammeln.',
+            enable: 'Aktivieren'
+        },
+        NavigationAreaParams: {
+            ShowBackToHomeOnInnerPages: true,
+            NavbarSize: -1,
+            NavbarLiveHomePage: 'https://www.cuperdach.ch/',
+            BlockContainerSelector: '.dmBody',
+            NavbarSelector: '#dmNav:has(a)',
+            SubNavbarSelector: '#subnav_main'
+        },
+        hasCustomCode: true,
+        planID: '1715',
+        customTemplateId: 'null',
+        siteTemplateId: 'null',
+        productId: 'DM_DIRECT',
+        disableTracking: false,
+        pageType: 'FROM_SCRATCH',
+        isRuntimeServer: true,
+        isInEditor: false,
+        isInPreview: false,
+        hasNativeStore: false,
+        defaultLang: 'de',
+        hamburgerMigration: null,
+        isFlexSite: false
+    };
+
+    window.Parameters.LayoutID = {};
+    window.Parameters.LayoutID[window._currentDevice] = 6;
+    window.Parameters.LayoutVariationID = {};
+    window.Parameters.LayoutVariationID[window._currentDevice] = 5;
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Injecting site-wide to the head -->
+
+
+<meta name="google-site-verification" content="_0w5Rkq7Z-XO6zQ0GVIijbQHbfItzQBQB0BAg3zcc-A" data-swh-uuid="229edf7468bd46688c731ddc235db1e3"/>
+
+
+
+<!-- End Injecting site-wide to the head -->
+
+
+
+
+
+<script>
+    function toHash(str) {
+        var hash = 5381, i = str.length;
+        while (i) {
+            hash = hash * 33 ^ str.charCodeAt(--i)
+        }
+        return hash >>> 0
+    }
+</script>
+<script>
+    (function (global) {
+    //const cacheKey = global.cacheKey;
+    const isOffline = 'onLine' in navigator && navigator.onLine === false;
+    const hasServiceWorkerSupport = 'serviceWorker' in navigator;
+    if (isOffline) {
+        console.log('offline mode');
+    }
+    if (!hasServiceWorkerSupport) {
+        console.log('service worker is not supported');
+    }
+    if (hasServiceWorkerSupport && !isOffline) {
+        window.addEventListener('load', function () {
+            const serviceWorkerPath = '/runtime-service-worker.js?v=3';
+            navigator.serviceWorker
+                .register(serviceWorkerPath, { scope: './' })
+                .then(
+                    function (registration) {
+                        // Registration was successful
+                        console.log(
+                            'ServiceWorker registration successful with scope: ',
+                            registration.scope
+                        );
+                    },
+                    function (err) {
+                        // registration failed :(
+                        console.log('ServiceWorker registration failed: ', err);
+                    }
+                )
+                .catch(function (err) {
+                    console.log(err);
+                });
+        });
+
+        // helper function to refresh the page
+        var refreshPage = (function () {
+            var refreshing;
+            return function () {
+                if (refreshing) return;
+                // prevent multiple refreshes
+                var refreshkey = 'refreshed' + location.href;
+                var prevRefresh = localStorage.getItem(refreshkey);
+                if (prevRefresh) {
+                    localStorage.removeItem(refreshkey);
+                    if (Date.now() - prevRefresh < 30000) {
+                        return; // dont go into a refresh loop
+                    }
+                }
+                refreshing = true;
+                localStorage.setItem(refreshkey, Date.now());
+                console.log('refereshing page');
+                window.location.reload();
+            };
+        })();
+
+        function messageServiceWorker(data) {
+            return new Promise(function (resolve, reject) {
+                if (navigator.serviceWorker.controller) {
+                    var worker = navigator.serviceWorker.controller;
+                    var messageChannel = new MessageChannel();
+                    messageChannel.port1.onmessage = replyHandler;
+                    worker.postMessage(data, [messageChannel.port2]);
+                    function replyHandler(event) {
+                        resolve(event.data);
+                    }
+                } else {
+                    resolve();
+                }
+            });
+        }
+    }
+})(window);
+</script>
+
+
+
+<link rel="canonical" href="https://www.cuperdach.ch/dienstleistungen">
+
+<meta id="view" name="viewport" content="initial-scale=1, minimum-scale=1, maximum-scale=5, viewport-fit=cover">
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+
+
+<link rel="apple-touch-icon"
+      href="https://de.cdn-website.com/e256bf8e5d474bb1b94d236567d1e275/dms3rep/multi/Cuper-Dach-GmbH-Rheineck-002.jpg"/>
+
+<link rel="icon" type="image/x-icon" href="https://de.cdn-website.com/e256bf8e5d474bb1b94d236567d1e275/site_favicon_16_1748267450333.ico"/>
+
+
+<link rel="preconnect" href="https://le-de.cdn-website.com"/>
+<link rel="preconnect" href="https://de.cdn-website.com" crossorigin/>
+<link rel="preconnect" href="https://static.cdn-website.com"/>
+<link rel="preconnect" href="https://de.cdn-website.com"/>
+
+
+
+
+<script id='d-js-dmapi'>
+    window.SystemID = 'EU_PRODUCTION';
+
+    if (!window.dmAPI) {
+        window.dmAPI = {
+            registerExternalRuntimeComponent: function () {
+            },
+            getCurrentDeviceType: function () {
+                return window._currentDevice;
+            },
+            runOnReady: (ns, fn) => {
+                const safeFn = dmAPI.toSafeFn(fn);
+                ns = ns || 'global_' + Math.random().toString(36).slice(2, 11);
+                const eventName = 'afterAjax.' + ns;
+
+                if (document.readyState === 'complete') {
+                    $.DM.events.off(eventName).on(eventName, safeFn);
+                    setTimeout(function () {
+                        safeFn({
+                            isAjax: false,
+                        });
+                    }, 0);
+                } else {
+                    window?.waitForDeferred?.('dmAjax', () => {
+                        $.DM.events.off(eventName).on(eventName, safeFn);
+                        safeFn({
+                            isAjax: false,
+                        });
+                    });
+                }
+            },
+            toSafeFn: (fn) => {
+                if (fn?.safe) {
+                    return fn;
+                }
+                const safeFn = function (...args) {
+                    try {
+                        return fn?.apply(null, args);
+                    } catch (e) {
+                        console.log('function failed ' + e.message);
+                    }
+                };
+                safeFn.safe = true;
+                return safeFn;
+            }
+        };
+    }
+
+    if (!window.requestIdleCallback) {
+        window.requestIdleCallback = function (fn) {
+            setTimeout(fn, 0);
+        }
+    }
+</script>
+
+
+
+
+
+
+
+
+<script id="d-js-load-css">
+/**
+ * There are a few <link> tags with CSS resource in them that are preloaded in the page
+ * in each of those there is a "onload" handler which invokes the loadCSS callback
+ * defined here.
+ * We are monitoring 3 main CSS files - the runtime, the global and the page.
+ * When each load we check to see if we can append them all in a batch. If threre
+ * is no page css (which may happen on inner pages) then we do not wait for it
+ */
+(function () {
+  let cssLinks = {};
+  function loadCssLink(link) {
+    link.onload = null;
+    link.rel = "stylesheet";
+    link.type = "text/css";
+  }
+  
+    function checkCss() {
+      const pageCssLink = document.querySelector("[id*='CssLink']");
+      const widgetCssLink = document.querySelector("[id*='widgetCSS']");
+
+        if (cssLinks && cssLinks.runtime && cssLinks.global && (!pageCssLink || cssLinks.page) && (!widgetCssLink || cssLinks.widget)) {
+            const storedRuntimeCssLink = cssLinks.runtime;
+            const storedPageCssLink = cssLinks.page;
+            const storedGlobalCssLink = cssLinks.global;
+            const storedWidgetCssLink = cssLinks.widget;
+
+            storedGlobalCssLink.disabled = true;
+            loadCssLink(storedGlobalCssLink);
+
+            if (storedPageCssLink) {
+                storedPageCssLink.disabled = true;
+                loadCssLink(storedPageCssLink);
+            }
+
+            if(storedWidgetCssLink) {
+                storedWidgetCssLink.disabled = true;
+                loadCssLink(storedWidgetCssLink);
+            }
+
+            storedRuntimeCssLink.disabled = true;
+            loadCssLink(storedRuntimeCssLink);
+
+            requestAnimationFrame(() => {
+                setTimeout(() => {
+                    storedRuntimeCssLink.disabled = false;
+                    storedGlobalCssLink.disabled = false;
+                    if (storedPageCssLink) {
+                      storedPageCssLink.disabled = false;
+                    }
+                    if (storedWidgetCssLink) {
+                      storedWidgetCssLink.disabled = false;
+                    }
+                    // (SUP-4179) Clear the accumulated cssLinks only when we're
+                    // sure that the document has finished loading and the document 
+                    // has been parsed.
+                    if(document.readyState === 'interactive') {
+                      cssLinks = null;
+                    }
+                }, 0);
+            });
+        }
+    }
+  
+
+  function loadCSS(link) {
+    try {
+      var urlParams = new URLSearchParams(window.location.search);
+      var noCSS = !!urlParams.get("nocss");
+      var cssTimeout = urlParams.get("cssTimeout") || 0;
+
+      if (noCSS) {
+        return;
+      }
+      if (link.href && link.href.includes("d-css-runtime")) {
+        cssLinks.runtime = link;
+        checkCss();
+      } else if (link.id === "siteGlobalCss") {
+        cssLinks.global = link;
+        checkCss();
+      } 
+      
+      else if (link.id && link.id.includes("CssLink")) {
+        cssLinks.page = link;
+        checkCss();
+      } else if (link.id && link.id.includes("widgetCSS")) {
+        cssLinks.widget = link;
+        checkCss();
+      }
+      
+      else {
+        requestIdleCallback(function () {
+          window.setTimeout(function () {
+            loadCssLink(link);
+          }, parseInt(cssTimeout, 10));
+        });
+      }
+    } catch (e) {
+      throw e
+    }
+  }
+  window.loadCSS = window.loadCSS || loadCSS;
+})();
+</script>
+
+
+
+<script data-role="deferred-init" type="text/javascript">
+    /* usage: window.getDeferred(<deferred name>).resolve() or window.getDeferred(<deferred name>).promise.then(...)*/
+    function Def() {
+        this.promise = new Promise((function (a, b) {
+            this.resolve = a, this.reject = b
+        }).bind(this))
+    }
+
+    const defs = {};
+    window.getDeferred = function (a) {
+        return null == defs[a] && (defs[a] = new Def), defs[a]
+    }
+    window.waitForDeferred = function (b, a, c) {
+        let d = window?.getDeferred?.(b);
+        d
+            ? d.promise.then(a)
+            : c && ["complete", "interactive"].includes(document.readyState)
+                ? setTimeout(a, 1)
+                : c
+                    ? document.addEventListener("DOMContentLoaded", a)
+                    : console.error(`Deferred  does not exist`);
+    };
+</script>
+<style id="forceCssIncludes">
+    /* This file is auto-generated from a `scss` file with the same name */
+
+.videobgwrapper{overflow:hidden;position:absolute;z-index:0;width:100%;height:100%;top:0;left:0;pointer-events:none;border-radius:inherit}.videobgframe{position:absolute;width:101%;height:100%;top:50%;left:50%;transform:translateY(-50%) translateX(-50%);object-fit:fill}#dm video.videobgframe{margin:0}@media (max-width:767px){.dmRoot .dmPhotoGallery.newPhotoGallery:not(.photo-gallery-done){min-height:80vh}}@media (min-width:1025px){.dmRoot .dmPhotoGallery.newPhotoGallery:not(.photo-gallery-done){min-height:45vh}}@media (min-width:768px) and (max-width:1024px){.responsiveTablet .dmPhotoGallery.newPhotoGallery:not(.photo-gallery-done){min-height:45vh}}#dm [data-show-on-page-only]{display:none!important}#dmRoot div.stickyHeaderFix div.site_content{margin-top:0!important}#dmRoot div.stickyHeaderFix div.hamburger-header-container{position:relative}@media (min-width:768px) and (max-width:1024px){.responsiveTablet #dm .dmInner .hide-for-medium,[data-hidden-on-tablet]{display:none!important}}
+    
+
+</style>
+<style id="cssVariables" type="text/css">
+    :root {
+  --color_1: rgba(255,255,255,1);
+  --color_2: rgba(26,45,62,1);
+  --color_3: rgba(198,199,201,1);
+  --color_4: rgba(17,17,17,1);
+  --color_5: rgba(243, 243, 243, 1);
+  --color_6: rgba(17,17,17,1);
+  --color_7: rgba(198,199,201,1);
+  --color_8: rgba(198,199,201,1);
+}
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link type="text/css" rel="stylesheet" href="https://de.cdn-website.com/fonts/css2?family=Roboto:wght@100;300;400;500;700;900&family=Spartan:wght@100;200;300;400;600;700;800;900&family=Montserrat:wght@100..900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Fjalla+One:wght@400&family=Roboto+Mono:wght@100..700&family=Source+Sans+Pro:wght@200;300;400;600;700;900&family=Nunito+Sans:wght@200..1000&amp;subset=latin-ext&amp;display=swap"  />
+
+
+
+
+
+
+<link rel="stylesheet" type="text/css" href="https://static.cdn-website.com/mnlt/production/6817/_dm/s/rt/dist/css/d-css-runtime-desktop-one-package-structured-global.min.css" />
+
+
+
+<link type="text/css" rel="stylesheet" href="https://de.cdn-website.com/WIDGET_CSS/61f96b86938b83445ad4baeabc5f7e17.css" id="widgetCSS" />
+
+
+<style>img[width][height] {
+  height: auto;
+}</style>
+
+
+<style>
+  body[data-page-alias="dienstleistungen"] #dm [data-show-on-page-only="dienstleistungen"] {
+    display: block !important;
+  }
+</style>
+
+
+<style id="pageAdditionalWidgetsCss" type="text/css">
+</style>
+
+
+
+
+
+<link type="text/css" rel="stylesheet" href="https://de.cdn-website.com/e256bf8e5d474bb1b94d236567d1e275/files/e256bf8e5d474bb1b94d236567d1e275_1.min.css?v=3" id="siteGlobalCss" />
+
+
+
+<style id="customWidgetStyle" type="text/css">
+    
+</style>
+<style id="innerPagesStyle" type="text/css">
+    
+</style>
+
+
+<style
+        id="additionalGlobalCss" type="text/css"
+>
+</style>
+
+<style id="pagestyle" type="text/css">
+    *#dm *.dmBody nav.u_1011803150
+{
+	color:white !important;
+}
+*#dm *.dmBody nav.u_1689388341
+{
+	color:white !important;
+}
+*#dm *.dmBody div.u_1055285094
+{
+	background-repeat:no-repeat !important;
+	background-image:none !important;
+}
+.tab-text-container
+{
+	line-height:1.4em !important;
+}
+*#dm *.dmBody div.u_1071155772
+{
+	background-repeat:no-repeat !important;
+	background-image:none !important;
+}
+*#dm *.dmBody div.u_1712754699
+{
+	background-color:var(--color_3) !important;
+}
+*#dm *.dmBody div.u_1183599161
+{
+	background-color:var(--color_3) !important;
+}
+*#dm *.dmBody div.u_1745764303 hr
+{
+	color:var(--color_8) !important;
+	border-top-width:1px !important;
+	border-top-style:solid !important;
+}
+*#dm *.dmBody div.u_residential
+{
+	background-repeat:no-repeat !important;
+	background-image:none !important;
+}
+*#dm *.dmBody div.u_realestate
+{
+	background-color:var(--color_3) !important;
+}
+*#dm *.dmBody div.u_exterior
+{
+	background-repeat:no-repeat !important;
+	background-image:none !important;
+}
+*#dm *.dmBody *.u_1714410206:before
+{
+	opacity:0.5 !important;
+	background-color:rgb(198,199,201) !important;
+}
+*#dm *.dmBody *.u_1714410206.before
+{
+	opacity:0.5 !important;
+	background-color:rgb(198,199,201) !important;
+}
+*#dm *.dmBody *.u_1714410206>.bgExtraLayerOverlay
+{
+	opacity:0.5 !important;
+	background-color:rgb(198,199,201) !important;
+}
+*#dm *.dmBody div.u_1714410206:before
+{
+	background-color:rgba(0,0,0,1) !important;
+	opacity:0.4 !important;
+}
+*#dm *.dmBody div.u_1714410206.before
+{
+	background-color:rgba(0,0,0,1) !important;
+	opacity:0.4 !important;
+}
+*#dm *.dmBody div.u_1714410206>.bgExtraLayerOverlay
+{
+	background-color:rgba(0,0,0,1) !important;
+	opacity:0.4 !important;
+}
+*#dm *.dmBody div.u_commercial
+{
+	background-color:var(--color_2) !important;
+}
+*#dm *.dmBody div.u_1031667997 hr
+{
+	color:var(--color_3) !important;
+	border-top-width:1px !important;
+	border-top-style:solid !important;
+}
+*#dm *.dmBody div.u_1944566742
+{
+	background-color:var(--color_2) !important;
+}
+*#dm *.dmBody div.u_1118321186 hr
+{
+	color:var(--color_3) !important;
+	border-top-width:1px !important;
+	border-top-style:solid !important;
+}
+*#dm *.dmBody div.u_1331382969
+{
+	background-repeat:no-repeat !important;
+	background-image:none !important;
+	background-color:var(--color_1) !important;
+}
+*#dm *.dmBody a.u_1338955735 span.icon
+{
+	color:var(--color_2) !important;
+	fill:var(--color_2) !important;
+}
+*#dm *.dmBody a.u_1338955735:hover .icon
+{
+	color:var(--color_1) !important;
+	fill:var(--color_1) !important;
+}
+*#dm *.dmBody a.u_1338955735.hover .icon
+{
+	color:var(--color_1) !important;
+	fill:var(--color_1) !important;
+}
+*#dm *.dmBody div.u_1714410206
+{
+	background-repeat:no-repeat !important;
+	background-image:url(https://le-de.cdn-website.com/e256bf8e5d474bb1b94d236567d1e275/dms3rep/multi/opt/spengler+7-2880w.jpeg) !important;
+	background-size:cover !important;
+}
+*#dm *.dmBody a.u_1338955735 .iconBg
+{
+	display:none !important;
+}
+*#dm *.dmBody a.u_1338955735
+{
+	border-radius:50px !important;
+	-moz-border-radius:50px !important;
+	-webkit-border-radius:50px !important;
+}
+*#dm *.dmBody div.u_1995967681
+{
+	background-repeat:no-repeat !important;
+	background-image:url(https://le-de.cdn-website.com/e256bf8e5d474bb1b94d236567d1e275/dms3rep/multi/opt/spengeler-2880w.webp) !important;
+	background-size:cover !important;
+	border-radius:20px 20px 20px 20px !important;
+}
+*#dm *.dmBody div.u_1146538686
+{
+	background-repeat:no-repeat !important;
+	background-image:url(https://le-de.cdn-website.com/e256bf8e5d474bb1b94d236567d1e275/dms3rep/multi/opt/dach3-2880w.jpg) !important;
+	background-size:cover !important;
+	border-radius:20px 20px 20px 20px !important;
+}
+*#dm *.dmBody div.u_1486181849
+{
+	background-repeat:no-repeat !important;
+	background-image:url(https://le-de.cdn-website.com/e256bf8e5d474bb1b94d236567d1e275/dms3rep/multi/opt/WhatsApp+Image+2025-05-21+at+16.23.00-2880w.jpeg) !important;
+	background-size:cover !important;
+	border-radius:20px 20px 20px 20px !important;
+}
+
+</style>
+
+<style id="pagestyleDevice" type="text/css">
+    *#dm *.dmBody div.u_1189589131
+{
+	margin-left:0 !important;
+	padding-top:0 !important;
+	padding-left:40px !important;
+	padding-bottom:0 !important;
+	margin-top:0 !important;
+	margin-bottom:0 !important;
+	margin-right:0 !important;
+	padding-right:40px !important;
+	width:auto !important;
+}
+*#dm *.dmBody div.u_1230623383
+{
+	margin-left:0 !important;
+	padding-top:0 !important;
+	padding-left:0 !important;
+	padding-bottom:0 !important;
+	margin-top:0 !important;
+	margin-bottom:0 !important;
+	margin-right:0 !important;
+	padding-right:0 !important;
+}
+*#dm *.dmBody div.u_1063052200
+{
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:calc(100% - 0px) !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:50px !important;
+	padding-left:0 !important;
+	padding-bottom:2px !important;
+	max-width:100% !important;
+	padding-right:0 !important;
+	min-width:25px !important;
+	display:block !important;
+	margin-right:0 !important;
+	margin-left:0 !important;
+	margin-top:8px !important;
+	margin-bottom:8px !important;
+}
+*#dm *.dmBody div.u_1484112285
+{
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:543px !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:50px !important;
+	padding-left:0 !important;
+	padding-bottom:30px !important;
+	max-width:100% !important;
+	padding-right:0 !important;
+	min-width:0 !important;
+	display:block !important;
+	margin-left:0 !important;
+	margin-top:8px !important;
+	margin-bottom:8px !important;
+	margin-right:0 !important;
+}
+*#dm *.dmBody div.u_1995967681
+{
+	margin-left:0 !important;
+	padding-top:0 !important;
+	padding-left:0 !important;
+	padding-bottom:0 !important;
+	margin-top:0 !important;
+	margin-bottom:0 !important;
+	margin-right:0 !important;
+	padding-right:0 !important;
+}
+*#dm *.dmBody div.u_1640082384
+{
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:calc(100% - 0px) !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:50px !important;
+	padding-left:0 !important;
+	padding-bottom:30px !important;
+	max-width:100% !important;
+	padding-right:0 !important;
+	min-width:25px !important;
+	display:block !important;
+	margin-right:0 !important;
+	margin-left:0 !important;
+	margin-top:8px !important;
+	margin-bottom:8px !important;
+}
+*#dm *.dmBody div.u_1183599161
+{
+	padding-top:100px !important;
+	padding-left:40px !important;
+	padding-bottom:15px !important;
+	padding-right:40px !important;
+	width:auto !important;
+	margin-left:0 !important;
+	margin-top:0 !important;
+	margin-bottom:0 !important;
+	margin-right:0 !important;
+}
+*#dm *.dmBody div.u_1745764303
+{
+	width:calc(100% - 0px) !important;
+	important:true !important;
+	padding-top:0 !important;
+	padding-left:0 !important;
+	padding-bottom:20px !important;
+	padding-right:0 !important;
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	position:relative !important;
+	height:auto !important;
+	max-width:100% !important;
+	min-width:25px !important;
+	text-align:start !important;
+}
+*#dm *.dmBody div.u_bathroom
+{
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:calc(100% - 0px) !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:50px !important;
+	padding-left:0 !important;
+	padding-bottom:0 !important;
+	max-width:100% !important;
+	padding-right:0 !important;
+	min-width:25px !important;
+	display:block !important;
+	margin-right:0 !important;
+	margin-left:0 !important;
+	margin-top:8px !important;
+	margin-bottom:8px !important;
+}
+*#dm *.dmBody div.u_balcony
+{
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:543px !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:50px !important;
+	padding-left:0 !important;
+	padding-bottom:0 !important;
+	max-width:100% !important;
+	padding-right:0 !important;
+	min-width:0 !important;
+	display:block !important;
+	margin-left:0 !important;
+	margin-top:8px !important;
+	margin-bottom:8px !important;
+	margin-right:0 !important;
+}
+*#dm *.dmBody div.u_1031667997
+{
+	width:calc(100% - -200px) !important;
+	important:true !important;
+	padding-top:0 !important;
+	padding-left:0 !important;
+	padding-bottom:20px !important;
+	padding-right:0 !important;
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	position:relative !important;
+	height:auto !important;
+	max-width:100% !important;
+	min-width:25px !important;
+	text-align:start !important;
+}
+*#dm *.dmBody div.u_1146538686
+{
+	background-repeat:no-repeat !important;
+	background-size:cover !important;
+	background-attachment:initial !important;
+	background-position:0 50% !important;
+	margin-left:0 !important;
+	padding-top:0 !important;
+	padding-left:0 !important;
+	padding-bottom:0 !important;
+	margin-top:0 !important;
+	margin-bottom:0 !important;
+	margin-right:0 !important;
+	padding-right:0 !important;
+}
+*#dm *.dmBody div.u_1071155772
+{
+	padding-top:100px !important;
+	padding-left:40px !important;
+	padding-bottom:100px !important;
+	padding-right:40px !important;
+	width:auto !important;
+	background-attachment:fixed !important;
+	background-size:cover !important;
+	margin-left:0 !important;
+	margin-top:0 !important;
+	margin-bottom:0 !important;
+	margin-right:0 !important;
+}
+*#dm *.dmBody div.u_1055285094
+{
+	padding-top:0 !important;
+	padding-left:40px !important;
+	padding-bottom:100px !important;
+	padding-right:40px !important;
+	width:auto !important;
+	background-attachment:fixed !important;
+	background-size:cover !important;
+	margin-left:0 !important;
+	margin-top:0 !important;
+	margin-bottom:0 !important;
+	margin-right:0 !important;
+}
+*#dm *.dmBody div.u_1712754699
+{
+	margin-left:0 !important;
+	padding-top:100px !important;
+	padding-left:40px !important;
+	padding-bottom:100px !important;
+	margin-top:0 !important;
+	margin-bottom:0 !important;
+	margin-right:0 !important;
+	padding-right:40px !important;
+	width:auto !important;
+}
+*#dm *.dmBody div.u_realestate
+{
+	margin-left:0 !important;
+	padding-top:100px !important;
+	padding-left:40px !important;
+	padding-bottom:100px !important;
+	margin-top:0 !important;
+	margin-bottom:0 !important;
+	margin-right:0 !important;
+	padding-right:40px !important;
+	width:auto !important;
+}
+*#dm *.dmBody div.u_exterior
+{
+	padding-top:100px !important;
+	padding-left:40px !important;
+	padding-bottom:100px !important;
+	padding-right:40px !important;
+	width:auto !important;
+	background-attachment:fixed !important;
+	background-size:cover !important;
+	margin-left:0 !important;
+	margin-top:0 !important;
+	margin-bottom:0 !important;
+	margin-right:0 !important;
+}
+*#dm *.dmBody div.u_residential
+{
+	padding-top:100px !important;
+	padding-left:40px !important;
+	padding-bottom:100px !important;
+	padding-right:40px !important;
+	width:auto !important;
+	background-attachment:fixed !important;
+	background-size:cover !important;
+	margin-left:0 !important;
+	margin-top:0 !important;
+	margin-bottom:0 !important;
+	margin-right:0 !important;
+}
+*#dm *.dmBody div.u_commercial
+{
+	padding-top:100px !important;
+	padding-left:40px !important;
+	padding-bottom:100px !important;
+	padding-right:40px !important;
+	width:auto !important;
+	margin-left:0 !important;
+	margin-top:0 !important;
+	margin-bottom:0 !important;
+	margin-right:0 !important;
+}
+*#dm *.dmBody div.u_1233778502
+{
+	float:none !important;
+	top:0px !important;
+	left:0 !important;
+	width:calc(100% - 0px) !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:2px !important;
+	padding-left:0px !important;
+	padding-bottom:2px !important;
+	min-height:auto !important;
+	margin-right:auto !important;
+	margin-left:auto !important;
+	max-width:100% !important;
+	margin-top:8px !important;
+	margin-bottom:8px !important;
+	padding-right:0px !important;
+	min-width:25px !important;
+}
+*#dm *.dmBody div.u_1117423677
+{
+	padding-top:0px !important;
+	padding-left:0px !important;
+	padding-bottom:0px !important;
+	padding-right:0px !important;
+	width:auto !important;
+	margin-left:0 !important;
+	margin-top:0 !important;
+	margin-bottom:0 !important;
+	margin-right:0 !important;
+}
+*#dm *.dmBody div.u_1266053462
+{
+	float:none !important;
+	top:0px !important;
+	left:0px !important;
+	width:calc(100% - 0px) !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:0px !important;
+	padding-left:0px !important;
+	padding-bottom:0px !important;
+	max-width:100% !important;
+	padding-right:0px !important;
+	min-width:25px !important;
+	display:block !important;
+	margin-left:0px !important;
+	margin-top:8px !important;
+	margin-bottom:8px !important;
+	margin-right:0px !important;
+	min-height:auto !important;
+}
+*#dm *.dmBody div.u_home-office
+{
+	float:none !important;
+	top:0px !important;
+	left:0px !important;
+	width:calc(100% - 0px) !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:0px !important;
+	padding-left:0px !important;
+	padding-bottom:0px !important;
+	max-width:100% !important;
+	padding-right:0px !important;
+	min-width:25px !important;
+	display:block !important;
+	margin-right:0px !important;
+	margin-left:0px !important;
+	margin-top:22px !important;
+	margin-bottom:8px !important;
+	min-height:auto !important;
+}
+*#dm *.dmBody div.u_1855284800
+{
+	float:none !important;
+	top:0px !important;
+	left:0px !important;
+	width:calc(100% - 0px) !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:2px !important;
+	padding-left:0px !important;
+	padding-bottom:2px !important;
+	max-width:100% !important;
+	padding-right:0px !important;
+	min-width:25px !important;
+	margin-right:0px !important;
+	margin-left:0px !important;
+	margin-top:8px !important;
+	margin-bottom:8px !important;
+	min-height:auto !important;
+}
+*#dm *.dmBody div.u_1986076546
+{
+	margin-left:0px !important;
+	padding-top:0px !important;
+	padding-left:60px !important;
+	padding-bottom:0px !important;
+	margin-top:0px !important;
+	margin-bottom:0px !important;
+	margin-right:0px !important;
+	padding-right:0px !important;
+}
+*#dm *.dmBody div.u_project01
+{
+	margin-left:0 !important;
+	padding-top:0px !important;
+	padding-left:0px !important;
+	padding-bottom:0px !important;
+	margin-top:0 !important;
+	margin-bottom:0 !important;
+	margin-right:0 !important;
+	padding-right:0px !important;
+	width:auto !important;
+}
+*#dm *.dmBody div.u_1641187070
+{
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:394px !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:0px !important;
+	padding-left:0px !important;
+	padding-bottom:0px !important;
+	max-width:100% !important;
+	padding-right:0px !important;
+	min-width:0 !important;
+	display:block !important;
+	margin-left:0 !important;
+	margin-top:8px !important;
+	margin-bottom:8px !important;
+	margin-right:0 !important;
+}
+*#dm *.dmBody div.u_1791722164
+{
+	float:none !important;
+	top:0px !important;
+	left:0px !important;
+	width:calc(100% - 0px) !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:0px !important;
+	padding-left:0px !important;
+	padding-bottom:0px !important;
+	max-width:425.975px !important;
+	padding-right:0px !important;
+	min-width:25px !important;
+	display:block !important;
+	margin-left:0px !important;
+	margin-top:22px !important;
+	margin-bottom:8px !important;
+	margin-right:274.013px !important;
+	min-height:auto !important;
+}
+*#dm *.dmBody div.u_1849305943
+{
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:calc(100% - 0px) !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:2px !important;
+	padding-left:0px !important;
+	padding-bottom:2px !important;
+	max-width:100% !important;
+	padding-right:60px !important;
+	min-width:25px !important;
+	margin-right:0px !important;
+	margin-left:0px !important;
+	margin-top:8px !important;
+	margin-bottom:0px !important;
+	display:block !important;
+}
+*#dm *.dmBody div.u_1486181849
+{
+	margin-left:0 !important;
+	padding-top:0 !important;
+	padding-left:0 !important;
+	padding-bottom:0 !important;
+	margin-top:0 !important;
+	margin-bottom:0 !important;
+	margin-right:0 !important;
+	padding-right:0 !important;
+}
+*#dm *.dmBody div.u_1118321186
+{
+	width:calc(100% - -200px) !important;
+	important:true !important;
+	padding-top:0 !important;
+	padding-left:0 !important;
+	padding-bottom:20px !important;
+	padding-right:0 !important;
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	position:relative !important;
+	height:auto !important;
+	max-width:100% !important;
+	min-width:25px !important;
+	text-align:start !important;
+}
+*#dm *.dmBody div.u_1944566742
+{
+	padding-top:100px !important;
+	padding-left:40px !important;
+	padding-bottom:100px !important;
+	padding-right:40px !important;
+	width:auto !important;
+}
+*#dm *.dmBody div.u_1920560343
+{
+	padding-top:0px !important;
+	padding-left:0px !important;
+	padding-bottom:0px !important;
+	padding-right:0px !important;
+	width:auto !important;
+	margin-left:0 !important;
+	margin-top:0 !important;
+	margin-bottom:0 !important;
+	margin-right:0 !important;
+}
+*#dm *.dmBody div.u_1766007480
+{
+	float:none !important;
+	top:0px !important;
+	left:0px !important;
+	width:calc(100% - 0px) !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:0px !important;
+	padding-left:0px !important;
+	padding-bottom:0px !important;
+	max-width:100% !important;
+	padding-right:0px !important;
+	min-width:25px !important;
+	display:block !important;
+	margin-left:0px !important;
+	margin-top:8px !important;
+	margin-bottom:8px !important;
+	margin-right:0px !important;
+	min-height:auto !important;
+}
+*#dm *.dmBody div.u_1318214489
+{
+	float:none !important;
+	top:0px !important;
+	left:0px !important;
+	width:calc(100% - 0px) !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:0px !important;
+	padding-left:0px !important;
+	padding-bottom:0px !important;
+	max-width:100% !important;
+	padding-right:0px !important;
+	min-width:25px !important;
+	display:block !important;
+	margin-right:0px !important;
+	margin-left:0px !important;
+	margin-top:22px !important;
+	margin-bottom:8px !important;
+	min-height:auto !important;
+}
+*#dm *.dmBody div.u_1981621394
+{
+	float:none !important;
+	top:0px !important;
+	left:0px !important;
+	width:calc(100% - 0px) !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:2px !important;
+	padding-left:0px !important;
+	padding-bottom:2px !important;
+	max-width:100% !important;
+	padding-right:0px !important;
+	min-width:25px !important;
+	margin-right:0px !important;
+	margin-left:0px !important;
+	margin-top:8px !important;
+	margin-bottom:8px !important;
+	min-height:auto !important;
+}
+*#dm *.dmBody div.u_1775842152
+{
+	margin-left:0px !important;
+	padding-top:0px !important;
+	padding-left:60px !important;
+	padding-bottom:0px !important;
+	margin-top:0px !important;
+	margin-bottom:0px !important;
+	margin-right:0px !important;
+	padding-right:0px !important;
+}
+*#dm *.dmBody div.u_1331382969
+{
+	padding-top:100px !important;
+	padding-left:40px !important;
+	padding-bottom:100px !important;
+	padding-right:40px !important;
+	width:auto !important;
+	background-attachment:fixed !important;
+	background-size:cover !important;
+	margin-left:0px !important;
+	margin-top:0px !important;
+	margin-bottom:0px !important;
+	margin-right:0px !important;
+}
+*#dm *.dmBody div.u_1635456707
+{
+	float:none !important;
+	top:0px !important;
+	left:0 !important;
+	width:calc(100% - 0px) !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:0px !important;
+	padding-left:0px !important;
+	padding-bottom:2px !important;
+	max-width:100% !important;
+	padding-right:0px !important;
+	min-width:25px !important;
+	display:block !important;
+	margin-right:auto !important;
+	margin-left:auto !important;
+	margin-top:8px !important;
+	margin-bottom:8px !important;
+	min-height:auto !important;
+}
+@media (min-width:768px) and (max-width:1024px) {}
+@media (min-width:1025px) {}
+*#dm *.dmBody div.u_1106931028
+{
+	margin-left:0 !important;
+	padding-top:0px !important;
+	padding-left:0px !important;
+	padding-bottom:0px !important;
+	margin-top:0 !important;
+	margin-bottom:0 !important;
+	margin-right:0 !important;
+	padding-right:0px !important;
+}
+*#dm *.dmBody div.u_1323518931
+{
+	float:none !important;
+	top:0px !important;
+	left:0 !important;
+	width:calc(100% - 161px) !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:2px !important;
+	padding-left:0px !important;
+	padding-bottom:2px !important;
+	margin-right:auto !important;
+	margin-left:auto !important;
+	max-width:553.8px !important;
+	margin-top:0px !important;
+	margin-bottom:0px !important;
+	padding-right:0px !important;
+	min-width:25px !important;
+	display:block !important;
+	min-height:auto !important;
+}
+*#dm *.dmBody div.u_1363964512
+{
+	float:none !important;
+	top:0px !important;
+	left:0 !important;
+	width:calc(100% - 100px) !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:2px !important;
+	padding-left:0px !important;
+	padding-bottom:2px !important;
+	min-height:auto !important;
+	margin-right:auto !important;
+	margin-left:auto !important;
+	max-width:676.8px !important;
+	margin-top:24px !important;
+	margin-bottom:8px !important;
+	padding-right:0px !important;
+	min-width:25px !important;
+}
+*#dm *.dmBody div.u_1682022507
+{
+	float:none !important;
+	top:0px !important;
+	left:0 !important;
+	width:calc(100% - 115px) !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:2px !important;
+	padding-left:0px !important;
+	padding-bottom:2px !important;
+	min-height:auto !important;
+	margin-right:auto !important;
+	margin-left:auto !important;
+	max-width:645.8px !important;
+	margin-top:18px !important;
+	margin-bottom:8px !important;
+	padding-right:0px !important;
+	min-width:25px !important;
+}
+*#dm *.dmBody div.u_1121012298
+{
+	float:none !important;
+	top:0px !important;
+	left:0 !important;
+	width:calc(100% - 239px) !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:2px !important;
+	padding-left:0px !important;
+	padding-bottom:2px !important;
+	max-width:398px !important;
+	padding-right:0px !important;
+	min-width:25px !important;
+	display:block !important;
+	margin-right:auto !important;
+	margin-left:auto !important;
+	margin-top:26px !important;
+	margin-bottom:8px !important;
+	min-height:auto !important;
+}
+*#dm *.dmBody div.u_1714410206
+{
+	background-repeat:no-repeat !important;
+	background-size:cover !important;
+	background-position:50% 50% !important;
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:auto !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:500px !important;
+	padding-left:40px !important;
+	padding-bottom:150px !important;
+	max-width:100% !important;
+	padding-right:40px !important;
+	min-width:0 !important;
+	text-align:start !important;
+	margin-left:0px !important;
+	margin-top:0px !important;
+	margin-bottom:0px !important;
+	margin-right:0px !important;
+}
+*#dm *.dmBody a.u_1338955735
+{
+	width:200px !important;
+	height:auto !important;
+	min-height:65px !important;
+	float:none !important;
+	top:0px !important;
+	left:0 !important;
+	position:relative !important;
+	max-width:100% !important;
+	min-width:0 !important;
+	text-align:center !important;
+	margin-left:auto !important;
+	margin-top:40px !important;
+	margin-bottom:10px !important;
+	margin-right:auto !important;
+}
+
+</style>
+
+
+
+
+
+
+
+
+
+<style id="globalFontSizeStyle" type="text/css">
+    .font-size-40, .size-40, .size-40 > font { font-size: 40px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }
+</style>
+<style id="pageFontSizeStyle" type="text/css">
+</style>
+
+
+
+
+<style id="hideAnimFix">
+  .dmDesktopBody:not(.editGrid) [data-anim-desktop]:not([data-anim-desktop='none']), .dmDesktopBody:not(.editGrid) [data-anim-extended] {
+    visibility: hidden;
+  }
+
+  .dmDesktopBody:not(.editGrid) .dmNewParagraph[data-anim-desktop]:not([data-anim-desktop='none']), .dmDesktopBody:not(.editGrid) .dmNewParagraph[data-anim-extended] {
+    visibility: hidden !important;
+  }
+
+  #dmRoot:not(.editGrid) .flex-element [data-anim-extended] {
+    visibility: hidden;
+  }
+
+</style>
+
+
+
+
+<style id="fontFallbacks">
+    @font-face {
+  font-family: "Roboto Fallback";
+  src: local('Arial');
+  ascent-override: 92.6709%;
+  descent-override: 24.3871%;
+  size-adjust: 100.1106%;
+  line-gap-override: 0%;
+ }@font-face {
+  font-family: "Montserrat Fallback";
+  src: local('Arial');
+  ascent-override: 84.9466%;
+  descent-override: 22.0264%;
+  size-adjust: 113.954%;
+  line-gap-override: 0%;
+ }@font-face {
+  font-family: "Poppins Fallback";
+  src: local('Arial');
+  ascent-override: 92.326%;
+  descent-override: 30.7753%;
+  line-gap-override: 8.793%;
+  size-adjust: 113.7274%;
+}@font-face {
+  font-family: "Fjalla One Fallback";
+  src: local('Arial');
+  ascent-override: 114.9994%;
+  descent-override: 28.2767%;
+  size-adjust: 87.7212%;
+  line-gap-override: 0%;
+ }@font-face {
+  font-family: "Roboto Mono Fallback";
+  src: local('Arial');
+  ascent-override: 77.0755%;
+  descent-override: 19.9333%;
+  size-adjust: 135.9513%;
+  line-gap-override: 0%;
+ }
+</style>
+
+
+
+
+
+
+
+
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.cuperdach.ch/dienstleistungen">
+
+  <title>
+    Dachdeckerei | Zürich, St. Gallen | Cuper Dach GmbH
+  </title>
+  <meta name="keywords" content="Dachdeckerei"/>
+  <meta name="description" content="Die Cuper Dach GmbH bietet bestes Handwerk in der Dachdeckerei im Raum Zürich und St. Gallen. Kontaktieren Sie unser Team noch heute für Ihren Auftrag!"/>
+
+  <meta name="twitter:card" content="summary"/>
+  <meta name="twitter:title" content="Dachdeckerei | Zürich, St. Gallen | Cuper Dach GmbH"/>
+  <meta name="twitter:description" content="Die Cuper Dach GmbH bietet bestes Handwerk in der Dachdeckerei im Raum Zürich und St. Gallen. Kontaktieren Sie unser Team noch heute für Ihren Auftrag!"/>
+  <meta name="twitter:image" content="https://le-de.cdn-website.com/e256bf8e5d474bb1b94d236567d1e275/dms3rep/multi/opt/Cuper-Dach-GmbH-Rheineck-002-1920w.jpg"/>
+  <meta property="og:description" content="Die Cuper Dach GmbH bietet bestes Handwerk in der Dachdeckerei im Raum Zürich und St. Gallen. Kontaktieren Sie unser Team noch heute für Ihren Auftrag!"/>
+  <meta property="og:title" content="Dachdeckerei | Zürich, St. Gallen | Cuper Dach GmbH"/>
+  <meta property="og:image" content="https://le-de.cdn-website.com/e256bf8e5d474bb1b94d236567d1e275/dms3rep/multi/opt/Cuper-Dach-GmbH-Rheineck-002-1920w.jpg"/>
+
+
+
+
+<!-- SYS- RVVfUFJPRFVDVElPTg== -->
+</head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<body id="dmRoot" data-page-alias="dienstleistungen"  class="dmRoot dmDesktopBody fix-mobile-scrolling addCanvasBorder dmResellerSite dmLargeBody responsiveTablet "
+      style="padding:0;margin:0;"
+      
+    >
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="dm" class='dmwr'>
+    
+    <div class="dm_wrapper standard-var5 widgetStyle-3 standard">
+         <div dmwrapped="true" id="1460842227"> <div dmtemplateid="Hamburger" data-responsive-name="ResponsiveDesktopTopTabletHamburger" class="runtime-module-container dm-bfs dm-layout-sec hasAnimations hasStickyHeader inMiniHeaderMode rows-1200 hide-back-to-top hamburger-reverse dmPageBody d-page-1763854611 inputs-css-clean dmFreeHeader" id="dm-outer-wrapper" data-page-class="1763854611" data-soch="true" data-background-parallax-selector=".dmHomeSection1, .dmSectionParallex"> <div id="dmStyle_outerContainer" class="dmOuter"> <div id="dmStyle_innerContainer" class="dmInner" data-auto="page-inner"> <div class="dmLayoutWrapper standard-var dmStandardDesktop"> <div id="site_content"> <div class="p_hfcontainer showOnMedium"> <div id="hamburger-drawer" class="hamburger-drawer layout-drawer" layout="e9d510f4eb904e939c2be8efaf777e6e===header" data-origin="side-reverse"> <div class="u_1522159148 dmRespRow" style="text-align: center;" id="1522159148"> <div class="dmRespColsWrapper" id="1333920915"> <div class="u_1607309886 dmRespCol small-12 medium-12 large-12 empty-column" id="1607309886"></div> 
+</div> 
+</div> 
+ <div class="u_1083788396 dmRespRow middleDrawerRow" style="text-align: center;" id="1083788396"> <div class="dmRespColsWrapper" id="1874580757"> <div class="dmRespCol small-12 u_1572996789 medium-12 large-12" id="1572996789"> <nav class="u_1318182163 effect-bottom2 main-navigation unifiednav dmLinksMenu" data-auto="links-menu" role="navigation" layout-main="vertical_nav_layout_2" layout-sub="" data-show-vertical-sub-items="HIDE" id="1318182163" dmle_extension="onelinksmenu" data-element-type="onelinksmenu" data-logo-src="" alt="" data-nav-structure="VERTICAL" wr="true" icon="true" surround="true" adwords="" navigation-id="unifiedNav"> <ul role="menubar" class="unifiednav__container unav-top  " data-auto="navigation-pages"> <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="/" class="unifiednav__item unav-item unav-top-item  dmUDNavigationItem_010101943230  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="Home" data-auto="page-text-style">Home<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="/dienstleistungen" class="unifiednav__item unav-item unav-top-item  dmNavItemSelected  dmUDNavigationItem_010101888066  " target="" data-target-page-alias="" aria-current="page" data-auto="selected-page"> <span class="nav-item-text " data-link-text="Dienstleistungen" data-auto="page-text-style">Dienstleistungen<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="/kontakt" class="unifiednav__item unav-item unav-top-item  dmUDNavigationItem_01010143527  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="
+         Kontakt
+        " data-auto="page-text-style">Kontakt<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+</ul> 
+</nav> 
+</div> 
+</div> 
+</div> 
+ <div class="dmRespRow u_1500467723" style="text-align: center;" id="1500467723"> <div class="dmRespColsWrapper" id="1196487331"> <div class="dmRespCol empty-column small-12 medium-12 large-12" id="1464440409"></div> 
+</div> 
+</div> 
+</div> 
+ <div class="layout-drawer-overlay" id="layout-drawer-overlay"></div> 
+</div> 
+ <div class="site_content"> <div id="hamburger-header-container" class="showOnMedium hamburger-header-container p_hfcontainer"> <div id="hamburger-header" class="hamburger-header p_hfcontainer" layout="44dc38f951e9489490b055748e10ba9f===header"> <div class="u_1705692124 dmRespRow" style="text-align: center;" id="1705692124"> <div class="dmRespColsWrapper" id="1469942216"> <div class="u_1655486006 dmRespCol small-12 large-7 medium-7" id="1655486006"> <div class="u_1383066433 imageWidget align-center" data-widget-type="image" id="1383066433" data-element-type="image" data-binding="W3siYmluZGluZ05hbWUiOiJpbWFnZSIsInZhbHVlIjoic2l0ZV9pbWFnZXMubG9nbyJ9XQ=="> <a href="/" id="1397548651"><img src="https://le-de.cdn-website.com/e256bf8e5d474bb1b94d236567d1e275/dms3rep/multi/opt/Cuper-Dach-GmbH-Rheineck-001-1920w.jpg" id="1210056696" class="" data-dm-image-path="https://de.cdn-website.com/e256bf8e5d474bb1b94d236567d1e275/dms3rep/multi/Cuper-Dach-GmbH-Rheineck-001.jpg" width="1460" height="440" alt="Cuper Dach GmbH Logo" data-diy-image="" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+</div> 
+ <div class="u_1492001890 dmRespCol small-12 large-5 medium-5" id="1492001890"> <a class="u_1600472089 default align-center flexButton button_2 dmCall voipReplacement dmWidget dmNoMark dmWwr" href="tel:+41762659255" contenteditable="false" onclick=";return dm_gaq_push_event('ClickToCall', 'Call',null,'e256bf8e5d474bb1b94d236567d1e275', this);" id="1600472089" dmle_extension="clicktocall" data-element-type="clicktocall" data-buttonstyle="FLAT_ROUND_ICON" wr="true" data-display-type="block" icon="true" surround="true" description="076 265 92 55" adwords="" icon-name="icon-phone" phone="+41762659255" text="" image=""> <span class="iconBg" data-auto="button-icon-bg" aria-hidden="true"> <span class="icon hasFontIcon icon-phone" data-auto="button-icon"></span> 
+</span> 
+ <span class="text" data-auto="button-text">076 265 92 55</span> 
+</a> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <button class="showOnMedium layout-drawer-hamburger hamburger-on-header" id="layout-drawer-hamburger" data-auto="layout-drawer-hamburger" aria-label="menu" aria-controls="hamburger-drawer" aria-expanded="false"> <span class="hamburger__slice"></span> 
+ <span class="hamburger__slice"></span> 
+ <span class="hamburger__slice"></span> 
+</button> 
+ <div class="dmHeaderContainer fHeader d-header-wrapper showOnLarge"> <div id="hcontainer" class="u_hcontainer dmHeader p_hfcontainer" freeheader="true" headerlayout="b58ba5b5703b4cd7b5f5f7951565dc87===horizontal-layout-5" preserve-sticky-header="true" layout="3160be7e691447abbddc535d6cfafc7a===header" secondary-image="https://de.cdn-website.com/md/dmtmpl/1f2e077c-1f1a-4c6f-a654-410702fae5da/dms3rep/multi/logo.svg" has-secondary-image="true" data-auto="header"> <div dm:templateorder="85" class="dmHeaderResp dmHeaderStack noSwitch" id="1709005236"> <div class="u_1656119553 dmRespRow" style="text-align: center;" id="1656119553"> <div class="dmRespColsWrapper" id="1706372147"> <div class="u_1709339704 dmRespCol small-12 large-3 medium-3" id="1709339704"> <span id="1584132598"></span> 
+ <div class="u_1815582715 imageWidget align-center" data-widget-type="image" id="1815582715" data-element-type="image" data-binding="W3siYmluZGluZ05hbWUiOiJpbWFnZSIsInZhbHVlIjoic2l0ZV9pbWFnZXMubG9nbyJ9XQ=="> <a href="/" id="1659889876"><img src="https://le-de.cdn-website.com/e256bf8e5d474bb1b94d236567d1e275/dms3rep/multi/opt/Cuper-Dach-GmbH-Rheineck-001-1920w.jpg" id="1823034393" class="" data-dm-image-path="https://de.cdn-website.com/e256bf8e5d474bb1b94d236567d1e275/dms3rep/multi/Cuper-Dach-GmbH-Rheineck-001.jpg" width="1460" height="440" alt="Cuper Dach GmbH Logo" data-diy-image="" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+</div> 
+ <div class="u_1464653413 dmRespCol small-12 middle large-5 medium-5" id="1464653413"> <span id="1497566355"></span> 
+ <nav class="u_1766994605 effect-bottom2 main-navigation unifiednav dmLinksMenu" data-auto="links-menu" role="navigation" layout-main="horizontal_nav_layout_1" layout-sub="submenu_horizontal_1" data-show-vertical-sub-items="HOVER" id="1766994605" dmle_extension="onelinksmenu" data-element-type="onelinksmenu" wr="true" icon="true" surround="true" adwords="" navigation-id="unifiedNav"> <ul role="menubar" class="unifiednav__container unav-top  " data-auto="navigation-pages"> <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="/" class="unifiednav__item unav-item unav-top-item  dmUDNavigationItem_010101943230  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="Home" data-auto="page-text-style">Home<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="/dienstleistungen" class="unifiednav__item unav-item unav-top-item  dmNavItemSelected  dmUDNavigationItem_010101888066  " target="" data-target-page-alias="" aria-current="page" data-auto="selected-page"> <span class="nav-item-text " data-link-text="Dienstleistungen" data-auto="page-text-style">Dienstleistungen<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="/kontakt" class="unifiednav__item unav-item unav-top-item  dmUDNavigationItem_01010143527  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="
+         Kontakt
+        " data-auto="page-text-style">Kontakt<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+</ul> 
+</nav> 
+</div> 
+ <div class="u_1414921303 dmRespCol small-12 middle large-4 medium-4" id="1414921303"> <span id="1124338440"></span> 
+ <a class="u_1269770047 default align-center flexButton button_2 dmCall voipReplacement dmWidget dmNoMark dmWwr" href="tel:+41762659255" contenteditable="false" onclick=";return dm_gaq_push_event('ClickToCall', 'Call',null,'e256bf8e5d474bb1b94d236567d1e275', this);" id="1269770047" dmle_extension="clicktocall" data-element-type="clicktocall" data-buttonstyle="FLAT_ROUND_ICON" wr="true" data-display-type="block" icon="true" surround="true" description="076 265 92 55" adwords="" icon-name="icon-phone" phone="+41762659255" text="" image=""> <span class="iconBg" data-auto="button-icon-bg" aria-hidden="true"> <span class="icon hasFontIcon icon-phone" data-auto="button-icon"></span> 
+</span> 
+ <span class="text" data-auto="button-text">076 265 92 55</span> 
+</a> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div class="stickyHeaderSpacer" id="stickyHeaderSpacer" data-auto="sticky-header-spacer" data-new="true"></div> 
+ <div dmwrapped="true" id="dmFirstContainer" class="dmBody u_dmStyle_template_dienstleistungen"> <div id="allWrapper" class="allWrapper" data-auto="all-wrapper"> <div id="dm_content" class="dmContent" role="main"> <div dm:templateorder="1" class="dmDefaultRespTmpl" id="1763854611"> <div class="innerPageTmplBox dmDefaultPage  dmRespRowsWrapper" id="1260607478"> <div class="u_1714410206 dmRespRow dmSectionNoParallax hasBackgroundOverlay" id="1714410206" data-gallery-bg="eyJzbGlkZXMiOlsiaHR0cHM6Ly9sZS1kZS5jZG4td2Vic2l0ZS5jb20vZTI1NmJmOGU1ZDQ3NGJiMWI5NGQyMzY1NjdkMWUyNzUvZG1zM3JlcC9tdWx0aS9vcHQvQWRvYmVTdG9ja18yNTgxMDQzNTMtMTkyMHcuanBlZyJdLCJ0cmFuc2l0aW9uIjoiZmFkZSIsInNwZWVkIjoiMyJ9"> <div class="dmRespColsWrapper" id="1543538733"> <div class="dmRespCol large-12 medium-12 small-12 u_1438459440" id="1438459440"> <div class="u_1323518931 dmNewParagraph" data-element-type="paragraph" data-version="5" id="1323518931" style="text-align: left; display: block; opacity: 1; transform: translate3d(0%, 0%, 0px); animation-delay: unset !important; animation-duration: unset !important;" data-anim-desktop="fadeInRight"> <h1 class="text-align-center"><span style="color: var(--color_1); display: initial;">Ihre Dachdeckerei und Spenglerei in Z&uuml;rich bis nach St. Gallen</span></h1> 
+</div> 
+ <div class="u_1363964512 dmNewParagraph" data-element-type="paragraph" data-version="5" id="1363964512" style="transition: opacity 1s ease-in-out;"><p class="text-align-center"><span style="color: var(--color_1); display: initial;">Entdecken Sie unsere Leistungen rund ums Dach: Von klassischen Dachdeckerarbeiten &uuml;ber pr&auml;zise Spenglerarbeiten bis hin zu individuellen L&ouml;sungen f&uuml;r Neubau und Sanierung &ndash; wir bieten Ihnen Qualit&auml;t, Erfahrung und alles aus einer Hand. Wir beraten Sie gerne pers&ouml;nlich.</span></p></div> 
+</div> 
+</div> 
+</div> 
+ <div class="dmRespRow u_1875646927" id="1875646927"> <div class="dmRespColsWrapper" id="1658414864"> <div class="dmRespCol large-12 medium-12 small-12 u_1279918832" id="1279918832"> <div class="u_1233778502 dmNewParagraph" data-element-type="paragraph" data-version="5" id="1233778502" style="transition: opacity 1s ease-in-out;"> <h2 class="text-align-center size-40 m-size-32"><span style="display: unset;" class="font-size-40 m-font-size-32">Unsere Leistungen rund ums Dach</span></h2> 
+</div> 
+ <div class="u_1682022507 dmNewParagraph" data-element-type="paragraph" data-version="5" id="1682022507" style="transition: opacity 1s ease-in-out;"><p class="text-align-center"><span style="display: unset;">Wir sind Ihr zuverl&auml;ssiger Partner f&uuml;r Dachdeckerei und Spenglerarbeiten. Ob Neubau, Sanierung oder Reparatur &ndash; wir bieten Ihnen durchdachte L&ouml;sungen, pr&auml;zise ausgef&uuml;hrt und individuell abgestimmt. Mit Erfahrung, Sorgfalt und Leidenschaft sorgen wir daf&uuml;r, dass Ihr Dach nicht nur sch&uuml;tzt, sondern auch &uuml;berzeugt. Sprechen Sie mit uns!</span></p></div> 
+</div> 
+</div> 
+</div> 
+ <div class="dmRespRow u_commercial" id="commercial" data-anchor="commercial"> <div class="dmRespColsWrapper" id="1839977970"> <div class="dmRespCol large-12 medium-12 small-12 u_1456034109" id="1456034109"> <div class="u_1117423677 dmRespRow" id="1117423677"> <div class="dmRespColsWrapper" id="1292920405"> <div class="u_1995967681 dmRespCol empty-column small-12 large-5 medium-5 middle" id="1995967681" data-anim-desktop="fadeInCombo" data-anim-extended="eyJkZXNrdG9wIjp7InRyaWdnZXIiOiJlbnRyYW5jZSIsImFuaW1hdGlvbiI6ImZhZGVJbkNvbWJvIiwiZHVyYXRpb24iOjAuNCwiZGVsYXkiOjAuMDAyLCJpbnRlbnNpdHkiOjAuMDQsImRpciI6ImxlZnQifX0="></div> 
+ <div class="u_1986076546 dmRespCol small-12 large-7 medium-7" id="1986076546" data-anim-desktop="fadeInCombo" data-anim-extended="eyJkZXNrdG9wIjp7InRyaWdnZXIiOiJlbnRyYW5jZSIsImFuaW1hdGlvbiI6ImZhZGVJbkNvbWJvIiwiZHVyYXRpb24iOjAuNCwiZGVsYXkiOjAsImludGVuc2l0eSI6MC4wNCwiZGlyIjoicmlnaHQifX0="> <div class="u_1266053462 dmNewParagraph" id="1266053462" data-element-type="paragraph" data-version="5" background-image":""}"="" data-styletopreserve="{" style=""><p><strong style="display: initial; font-weight: bold; color: var(--color_1);">Spenglerei</strong></p></div> <div class="u_home-office dmNewParagraph" id="home-office" data-element-type="paragraph" data-version="5" background-image":""}"="" data-anchor="home-office" data-styletopreserve="{"> <h2><span style="color: var(--color_1); display: initial;">Doppelfalz-Dach &ndash; langlebig und elegant</span><span style="display: initial;"><br/></span></h2> 
+</div> <div class="u_1031667997 dmDividerWrapper clearfix hasFullWidth" data-element-type="dDividerId" data-layout="divider-style-1" data-widget-version="2" id="1031667997"><hr class="dmDivider" style="border-width:2px; border-top-style:solid; color:grey;" id="1024715372"/></div> 
+ <div class="u_1855284800 dmNewParagraph" data-element-type="paragraph" data-version="5" id="1855284800" style="transition: none; text-align: left; display: block;"><p><span style="color: var(--color_1); display: initial;">Wir planen und montieren hochwertige Doppelfalz-D&auml;cher aus Metall &ndash; eine langlebige, wetterfeste und &auml;sthetisch ansprechende L&ouml;sung f&uuml;r moderne und traditionelle Bauten. Die Doppelfalz-Technik (auch Stehfalz genannt) sorgt f&uuml;r h&ouml;chste Dichtheit und Stabilit&auml;t &ndash; selbst bei extremen Wetterbedingungen.<br/></span></p><p><strong style="font-weight: bold; color: var(--color_1); display: initial;">Unsere Leistungen:</strong></p> <ul class="defaultList bullet"><li style="color: var(--color_1);"><span style="color: var(--color_1); display: initial;">Beratung und Planung des Falzdachs<br/></span></li><li style="color: var(--color_1);"><span style="color: var(--color_1); display: initial;">Massanfertigung der Bleche in eigener Werkstatt</span></li><li style="color: var(--color_1);"><span style="color: var(--color_1); display: initial;">Fachgerechte Montage auf Unterkonstruktion</span></li><li style="color: var(--color_1);"><span style="color: var(--color_1); display: initial;">Integrierte L&ouml;sungen f&uuml;r Schneefang, Entw&auml;sserung und Durchdringungen</span></li><li style="color: var(--color_1);"><span style="color: var(--color_1); display: initial;">Wartung und Reparatur bestehender Falzd&auml;cher<br/></span></li></ul> 
+<p><strong style="font-weight: bold; color: var(--color_1); display: initial;">Geeignete Materialien:</strong></p> <ul class="defaultList bullet"><li style="color: var(--color_1);"><span style="color: var(--color_1); display: initial;">Titanzink</span></li><li style="color: var(--color_1);"><span style="color: var(--color_1); display: initial;">Kupfer</span></li><li style="color: var(--color_1);"><span style="color: var(--color_1); display: initial;">Aluminium (auch beschichtet)</span></li><li style="color: var(--color_1);"><span style="color: var(--color_1); display: initial;">Chromstahl</span><span style="display: initial;"><br/></span></li></ul> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div class="dmRespRow u_residential dmSectionParallaxNew" id="residential" data-anim-desktop="none" data-anchor="residential"> <div class="dmRespColsWrapper" id="1774838206"> <div class="dmRespCol large-12 medium-12 small-12 u_1245398160" id="1245398160"> <div class="dmRespRow u_project01 mobile-columns-reversed" id="project01" data-anchor="project01"> <div class="dmRespColsWrapper" id="1905493549"> <div class="u_1230623383 dmRespCol small-12 large-7 medium-7" id="1230623383" data-anim-desktop="fadeInCombo" data-anim-extended="eyJkZXNrdG9wIjp7InRyaWdnZXIiOiJlbnRyYW5jZSIsImFuaW1hdGlvbiI6ImZhZGVJbkNvbWJvIiwiZHVyYXRpb24iOjAuNiwiZGVsYXkiOjAsImludGVuc2l0eSI6MC4wNCwiZGlyIjoibGVmdCJ9fQ=="> <div class="u_1641187070 dmNewParagraph" id="1641187070" data-element-type="paragraph" data-version="5" background-image":""}"="" data-styletopreserve="{"><p><strong style="display: initial; font-weight: bold;">Dachdeckerei</strong></p></div> <div class="u_1791722164 dmNewParagraph" id="1791722164" data-element-type="paragraph" data-version="5" background-image":""}"="" style="text-align: left; display: block;"> <h2><span style="display: initial;">Dachdeckerei &ndash; solide Handwerksarbeit f&uuml;rs ganze Dach<br/></span></h2> 
+</div> <div class="u_1745764303 dmDividerWrapper clearfix hasFullWidth" data-element-type="dDividerId" data-layout="divider-style-1" data-widget-version="2" id="1745764303"><hr class="dmDivider" style="border-width:2px; border-top-style:solid; color:grey;" id="1503757089"/></div> 
+ <div class="u_1849305943 dmNewParagraph" data-element-type="paragraph" data-version="5" id="1849305943" style="transition: none 0s ease 0s; text-align: left; display: block;"><p><span style="display: initial;">Wir bieten umfassende Dachdeckerarbeiten f&uuml;r Neubau, Sanierung und Reparatur &ndash; individuell geplant, fachgerecht ausgef&uuml;hrt und auf h&ouml;chste Langlebigkeit ausgelegt.<br/></span></p><p><strong style="display: initial; font-weight: bold;">Unsere Dachdeckerleistungen:</strong></p> <ul class="defaultList bullet"><li><span style="display: initial;">Steild&auml;cher (Tonziegel, Betondachsteine, Biberschwanz)</span></li><li><span style="display: initial;">Flachd&auml;cher (Bitumen, Kunststoff- und EPDM-Abdichtungen)</span></li><li><span style="display: initial;">Unterd&auml;cher und Dampfsperren</span></li><li><span style="display: initial;">W&auml;rmed&auml;mmung nach aktuellen Energiestandards</span></li><li><span style="display: initial;">Dachfenster und Tageslichtelemente</span></li><li><span style="display: initial;">Schneefangsysteme und Absturzsicherungen</span></li><li><span style="display: initial;">Dachwartung, Sanierung und Reparaturdienst<br/></span></li></ul> 
+<p><strong style="display: initial; font-weight: bold;">Materialien:</strong></p> <ul class="defaultList bullet"><li><span style="display: initial;">Tonziegel</span></li><li><span style="display: initial;">Betondachsteine</span></li><li><span style="display: initial;">Bitumenbahnen</span></li><li><span style="display: initial;">EPDM- und Kunststoffbahnen</span></li><li><span style="display: initial;">D&auml;mmstoffe (Mineralwolle, PIR, Holzfaser)</span></li><li><span style="display: initial;">Unterdachbahnen und Dampfsperren</span></li></ul> 
+</div> 
+</div> 
+ <div class="u_1146538686 dmRespCol empty-column small-12 large-5 medium-5 middle dmSectionNoParallax" id="1146538686" data-anim-desktop="fadeInCombo" data-anim-extended="eyJkZXNrdG9wIjp7InRyaWdnZXIiOiJlbnRyYW5jZSIsImFuaW1hdGlvbiI6ImZhZGVJbkNvbWJvIiwiZHVyYXRpb24iOjAuNCwiZGVsYXkiOjAuMDAzLCJpbnRlbnNpdHkiOjAuMDQsImRpciI6InJpZ2h0In19" data-gallery-bg="eyJzbGlkZXMiOlsiaHR0cHM6Ly9sZS1kZS5jZG4td2Vic2l0ZS5jb20vbWQvZG10bXBsLzFmMmUwNzdjLTFmMWEtNGM2Zi1hNjU0LTQxMDcwMmZhZTVkYS9kbXMzcmVwL211bHRpL29wdC9raXRjaGVuX3NlcnZpY2UtMTkyMHcuanBnIl19"></div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div class="dmRespRow u_1944566742" id="1944566742"> <div class="dmRespColsWrapper" id="1924768504"> <div class="dmRespCol large-12 medium-12 small-12 u_1810397162" id="1810397162"> <div class="u_1920560343 dmRespRow" id="1920560343"> <div class="dmRespColsWrapper" id="1749854483"> <div class="u_1486181849 dmRespCol empty-column small-12 large-5 medium-5 middle" id="1486181849" data-anim-desktop="fadeInCombo" data-anim-extended="eyJkZXNrdG9wIjp7InRyaWdnZXIiOiJlbnRyYW5jZSIsImFuaW1hdGlvbiI6ImZhZGVJbkNvbWJvIiwiZHVyYXRpb24iOjAuNCwiZGVsYXkiOjAuMDAyLCJpbnRlbnNpdHkiOjAuMDQsImRpciI6ImxlZnQifX0="></div> 
+ <div class="u_1775842152 dmRespCol small-12 large-7 medium-7" id="1775842152" data-anim-desktop="fadeInCombo" data-anim-extended="eyJkZXNrdG9wIjp7InRyaWdnZXIiOiJlbnRyYW5jZSIsImFuaW1hdGlvbiI6ImZhZGVJbkNvbWJvIiwiZHVyYXRpb24iOjAuNCwiZGVsYXkiOjAsImludGVuc2l0eSI6MC4wNCwiZGlyIjoicmlnaHQifX0="> <div class="u_1766007480 dmNewParagraph" id="1766007480" data-element-type="paragraph" data-version="5" background-image":""}"="" data-styletopreserve="{"><p><strong style="display: initial; font-weight: bold; color: var(--color_1);">&Uuml;berdachungen</strong><span style="display: initial;"><span class="ql-cursor">﻿</span></span></p></div> <div class="u_1318214489 dmNewParagraph" id="1318214489" data-element-type="paragraph" data-version="5" background-image":""}"="" data-styletopreserve="{"> <h2><span style="display: initial; color: var(--color_1);">Flachdach &ndash; dicht, langlebig und funktional</span><span style="display: initial;"><br/></span></h2> 
+</div> <div class="u_1118321186 dmDividerWrapper clearfix hasFullWidth" data-element-type="dDividerId" data-layout="divider-style-1" data-widget-version="2" id="1118321186"><hr class="dmDivider" style="border-width:2px; border-top-style:solid; color:grey;" id="1723750589"/></div> 
+ <div class="u_1981621394 dmNewParagraph" data-element-type="paragraph" data-version="5" id="1981621394" style="transition: none; text-align: left; display: block;"><p><span style="color: var(--color_1); display: initial;">Das Flachdach ist mehr als nur ein Dach &ndash; es ist eine funktionale Fl&auml;che mit h&ouml;chsten Anforderungen an Abdichtung, D&auml;mmung und Entw&auml;sserung. Wir planen, bauen und sanieren Flachd&auml;cher nach aktuellen Standards und mit bew&auml;hrten Materialien.<br/></span><strong style="color: var(--color_1); display: initial; font-weight: bold;">Unsere Flachdach-Leistungen:</strong></p> <ul class="defaultList bullet"><li style="color: var(--color_1);"><span style="color: var(--color_1); display: initial;">Abdichtung mit Bitumen, Kunststoff (PVC, FPO) oder EPDM</span></li><li style="color: var(--color_1);"><span style="color: var(--color_1); display: initial;">Gef&auml;lled&auml;mmung und W&auml;rmed&auml;mmung nach EnEV/SIA-Norm</span></li><li style="color: var(--color_1);"><span style="color: var(--color_1); display: initial;">Notentw&auml;sserung und Sicherheitsvorkehrungen</span></li><li style="color: var(--color_1);"><span style="color: var(--color_1); display: initial;">Dachrandabschl&uuml;sse, Lichtkuppeln und Durchdringungen</span></li><li style="color: var(--color_1);"><span style="color: var(--color_1); display: initial;">Begr&uuml;nte D&auml;cher (Extensiv- und Intensivbegr&uuml;nung)</span></li><li style="color: var(--color_1);"><span style="color: var(--color_1); display: initial;">Sanierung und Instandhaltung bestehender Flachd&auml;cher<br/></span></li></ul> 
+<p><strong style="font-weight: bold; color: var(--color_1); display: initial;">Geeignete Materialien:</strong></p> <ul class="defaultList bullet"><li style="color: var(--color_1);"><span style="color: var(--color_1); display: initial;">Bitumen-Schweissbahnen</span></li><li style="color: var(--color_1);"><span style="color: var(--color_1); display: initial;">PDM-Folie (dauerelastisch, wurzelfest)</span></li><li style="color: var(--color_1);"><span style="color: var(--color_1); display: initial;">PVC- und FPO-Kunststoffbahnen</span></li><li style="color: var(--color_1);"><span style="color: var(--color_1); display: initial;">PUR/PIR-D&auml;mmstoffe</span></li><li style="color: var(--color_1);"><span style="color: var(--color_1); display: initial;">Gef&auml;lled&auml;mmung aus EPS oder Mineralwolle</span></li><li style="color: var(--color_1);"><span style="color: var(--color_1); display: initial;">Fl&uuml;ssigkunststoff f&uuml;r Detailausbildung</span><span style="display: initial;"><br/></span></li></ul> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div class="dmRespRow u_1331382969 dmSectionParallaxNew" id="1331382969" data-anim-desktop="none"> <div class="dmRespColsWrapper" id="1971906263"> <div class="dmRespCol large-12 medium-12 small-12 u_1106931028" id="1106931028"> <div class="u_1635456707 dmNewParagraph" id="1635456707" data-element-type="paragraph" data-version="5" background-image":""}"="" style="text-align: left; display: block;"><p class="text-align-center"><strong style="display: initial; font-weight: bold;">Cuper Dach</strong></p></div> <div class="u_1121012298 dmNewParagraph" id="1121012298" data-element-type="paragraph" data-version="5" background-image":""}"="" style="text-align: left; display: block;"> <h2 class="text-align-center"><span style="display: initial;">Setzen Sie Ihre Dacharbeiten mit uns um - jetzt anrufen!</span></h2> 
+</div> <a class="u_1338955735 default align-center flexButton hide-for-small dmCall voipReplacement dmWidget dmNoMark dmWwr" href="tel:+41762659255" contenteditable="false" onclick=";return dm_gaq_push_event('ClickToCall', 'Call',null,'e256bf8e5d474bb1b94d236567d1e275', this);" id="1338955735" dmle_extension="clicktocall" data-element-type="clicktocall" data-buttonstyle="ROUND_SIDES" wr="true" data-display-type="block" icon="true" surround="true" description="076 265 92 55" adwords="" icon-name="icon-phone" phone="+41762659255" text="" image=""> <span class="iconBg" data-auto="button-icon-bg" aria-hidden="true"> <span class="icon hasFontIcon icon-phone" data-auto="button-icon"></span> 
+</span> 
+ <span class="text" data-auto="button-text">076 265 92 55</span> 
+</a> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div class="sticky-widgets-container-global" id="1798578411"> <a data-display-type="block" class="u_1151946580 align-center dmButtonLink dmWidget dmWwr default dmOnlyButton dmDefaultGradient sticky-mobile-position-bottom-right sticky-desktop-position-bottom-right hide-for-large" file="false" href="tel:+41762659255" data-element-type="dButtonLinkId" id="1151946580" data-buttonstyle="ROUND_SIDES" icon-name="dm-icon-call" data-anim-mobile="zoomIn" data-binding="W3siYmluZGluZ05hbWUiOiJsaW5rIiwidmFsdWUiOiJjb250ZW50X2xpYnJhcnkuZ2xvYmFsLnBob25lLmN0YyJ9XQ=="> <span class="iconBg" id="1686894056"> <span class="icon hasFontIconstar hasFontIcon dm-icon-call" id="1090954198"></span> 
+</span> 
+ <span class="text" id="1200826519"></span> 
+</a> 
+ <div class="graphicWidget scrolltotop u_1260538760 sticky-desktop-position-bottom-right sticky-mobile-position-bottom-right u_1260538760" data-element-type="graphic" data-widget-type="graphic" id="1260538760" data-layout="graphic-style-1"> <a href="#dm" id="1727432751" aria-label="Pfeil"> <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 70 70" id="1239748119" class="svg u_1239748119" data-icon-name="ar-arrow_drop_up" data-hover-effect="zoomout" aria-labelledby="1387836889"> <title id="1387836889">Pfeil</title> 
+ <polygon points="17.4,45.7 15.1,43.3 35,24.3 54.9,43.3 52.6,45.7 35,28.8 "></polygon> 
+</svg> 
+</a> 
+</div> 
+</div> 
+ <div class="dmFooterContainer"> <div id="fcontainer" class="u_fcontainer f_hcontainer dmFooter p_hfcontainer"> <div dm:templateorder="250" class="dmFooterResp generalFooter" id="1943048428"> <div class="dmRespRow u_1415473090" id="1415473090" mode="1"> <div class="dmRespColsWrapper" id="1994696183"> <div class="u_1673944022 dmRespCol small-12 large-3 medium-3" id="1673944022"> <a class="u_1867100624 default align-center flexButton button_2 hide-for-large hide-for-medium dmCall voipReplacement dmWidget dmNoMark dmWwr" href="tel:+41762659255" contenteditable="false" onclick=";return dm_gaq_push_event('ClickToCall', 'Call',null,'e256bf8e5d474bb1b94d236567d1e275', this);" id="1867100624" dmle_extension="clicktocall" data-element-type="clicktocall" data-buttonstyle="FLAT_ROUND_ICON" wr="true" data-display-type="block" icon="true" surround="true" description="076 265 92 55" adwords="" icon-name="icon-phone" phone="+41762659255" text="" image=""> <span class="iconBg" data-auto="button-icon-bg" aria-hidden="true"> <span class="icon hasFontIcon icon-phone" data-auto="button-icon"></span> 
+</span> 
+ <span class="text" data-auto="button-text">076 265 92 55</span> 
+</a> 
+ <div class="u_1187014923 imageWidget align-center" data-widget-type="image" id="1187014923" data-element-type="image" data-binding="W3siYmluZGluZ05hbWUiOiJpbWFnZSIsInZhbHVlIjoic2l0ZV9pbWFnZXMubG9nbyJ9XQ=="> <a href="/" id="1038699952"><img src="https://le-de.cdn-website.com/e256bf8e5d474bb1b94d236567d1e275/dms3rep/multi/opt/Cuper-Dach-GmbH-Rheineck-001-1920w.jpg" id="1834460504" class="" data-dm-image-path="https://de.cdn-website.com/e256bf8e5d474bb1b94d236567d1e275/dms3rep/multi/Cuper-Dach-GmbH-Rheineck-001.jpg" width="1460" height="440" alt="Cuper Dach GmbH Logo" data-diy-image="" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+</div> 
+ <div class="u_1024452723 dmRespCol small-12 large-3 medium-3" id="1024452723"> <div class="u_1591385622 dmNewParagraph" data-element-type="paragraph" data-version="5" id="1591385622" style="transition: none 0s ease 0s; text-align: left; display: block;"> <h5><span style="display: initial; color: var(--color_1);">Kontakt</span></h5> 
+</div> 
+ <div class="u_1124935939 dmNewParagraph" data-element-type="paragraph" data-version="5" id="1124935939" style="transition: none 0s ease 0s; text-align: left;" data-diy-text="" data-binding="W3siYmluZGluZ05hbWUiOiJ0ZXh0IiwidmFsdWUiOiJjb250ZW50X2xpYnJhcnkuZ2xvYmFsIn1d">Br&uuml;ggershofstrasse 25, 9424 Rheineck, Schweiz</div> 
+ <div class="dmNewParagraph" data-element-type="paragraph" data-version="5" id="1625789158" style="transition: opacity 1s ease-in-out;"><p class="m-size-16 size-14"><a href="tel:+41762659255" type="call" class="m-font-size-16 font-size-14" m-font-size-set="true" style="color: var(--color_1); display: unset;" runtime_url="tel:+41762659255">076 265 92 55</a></p><p class="m-size-16 size-14"><a href="mailto:cuperdach.24@gmail.com" type="email" class="m-font-size-16 font-size-14" m-font-size-set="true" style="color: var(--color_1); display: unset;" runtime_url="mailto:cuperdach.24@gmail.com">cuperdach.24@gmail.com</a></p></div> 
+</div> 
+ <div class="u_1070886546 dmRespCol small-12 large-3 medium-3" id="1070886546"> <div class="u_1074516887 dmNewParagraph" data-element-type="paragraph" data-version="5" id="1074516887" style="transition: none 0s ease 0s; text-align: left; display: block;"> <h5><span style="display: initial; color: var(--color_1);">&Ouml;ffnungszeiten</span></h5> 
+</div> 
+ <div class="u_1545647123 default dmHoursOfOperation" id="1545647123" dmle_extension="open_hours" data-element-type="open_hours" data-binding="W3siYmluZGluZ05hbWUiOiJidXNpbmVzc19ob3VycyIsInZhbHVlIjoiY29udGVudF9saWJyYXJ5Lmdsb2JhbC5idXNpbmVzc19ob3VycyJ9XQ==" time_format="24" wr="true" lang="" displaytitle="false" forcedisplay="false" localization_key_title="googleTranslate.ZMXWuSR.93" icon="true" surround="true" adwords=""> <dl class="open-hours-data"> <div class="open-hours-item"> <dt day="0">Mo - Sa</dt> 
+ <dd> <time>07:00</time> 
+- <time>18:00</time> 
+</dd> 
+</div> 
+ <div class="open-hours-item"> <dt day="6">Sonntag</dt> 
+ <dd>Geschlossen</dd> 
+</div> 
+</dl> 
+</div> 
+</div> 
+ <div class="dmRespCol large-3 medium-3 small-12 u_1465983027" id="1465983027"> <div class="u_1398658950 dmNewParagraph" data-element-type="paragraph" data-version="5" id="1398658950" style="transition: none 0s ease 0s; text-align: left; display: block;"> <h5><span style="display: initial; color: var(--color_1);">Rechtliches</span></h5> 
+</div> 
+ <div class="u_1798037563 dmNewParagraph" data-element-type="paragraph" data-version="5" id="1798037563" style="transition: opacity 1s ease-in-out 0s;"><p class="size-14 m-size-16"><a href="/privacy" runtime_url="/privacy" type="page" class="font-size-14 m-font-size-16" style="display: unset; color: var(--color_1);" m-font-size-set="true">Datenschutzerkl&auml;rung</a></p></div> 
+ <div class="u_1721421363 dmNewParagraph" data-element-type="paragraph" data-version="5" id="1721421363" style="transition: opacity 1s ease-in-out 0s;"><p class="size-14 m-size-16"><a href="/impressum" runtime_url="/impressum" type="page" class="font-size-14 m-font-size-16" style="display: initial; color: var(--color_1);" m-font-size-set="true">Impressum</a></p></div> 
+ <div class="u_1572234793 dmNewParagraph" data-element-type="paragraph" data-version="5" id="1572234793" style="transition: opacity 1s ease-in-out 0s;"><p class="m-size-16 size-14"><a href="https://www.local.ch/de/d/rheineck/9424/spenglerei/cuper-dach-gmbh-H4yOvBim6Ilvy51eZf1F1Q" target="_blank" runtime_url="https://www.local.ch/de/d/rheineck/9424/spenglerei/cuper-dach-gmbh-H4yOvBim6Ilvy51eZf1F1Q" type="url" class="font-size-14 m-font-size-16" m-font-size-set="true" style="display: initial; color: var(--color_1);">Local.ch</a></p></div> 
+ <div class="u_1938696609 dmNewParagraph" data-element-type="paragraph" data-version="5" id="1938696609" style="transition: opacity 1s ease-in-out 0s;"><p class="m-size-16 size-14"><a href="https://search.ch/tel/rheineck/brueggershofstrasse-25/cuper-dach-gmbh.de.html" target="_blank" runtime_url="https://search.ch/tel/rheineck/brueggershofstrasse-25/cuper-dach-gmbh.de.html" type="url" class="font-size-14 m-font-size-16" m-font-size-set="true" style="display: initial; color: var(--color_1);">Search.ch</a></p></div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div id="1236746004" dmle_extension="powered_by" data-element-type="powered_by" icon="true" surround="false"></div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    var isWLR = true;
+
+    window.customWidgetsFunctions = {};
+    window.customWidgetsStrings = {};
+    window.collections = {};
+    window.currentLanguage = "GERMAN"
+    window.isSitePreview = false;
+</script>
+
+
+
+
+<script type="text/javascript">
+
+    var d_version = "production_6817";
+    var build = "2026-10-01T14_02_32";
+    window['v' + 'ersion'] = d_version;
+
+    function buildEditorParent() {
+        window.isMultiScreen = true;
+        window.editorParent = {};
+        window.previewParent = {};
+        window.assetsCacheQueryParam = "?version=2026-10-01T14_02_32";
+        try {
+            var _p = window.parent;
+            if (_p && _p.document && _p.$ && _p.$.dmfw) {
+                window.editorParent = _p;
+            } else if (_p.isSitePreview) {
+                window.previewParent = _p;
+            }
+        } catch (e) {
+
+        }
+    }
+
+    buildEditorParent();
+</script>
+
+
+
+
+<script type="text/javascript" id='d-js-jquery'
+        src="https://static.cdn-website.com/libs/jquery/jquery-3.7.0.min.js"></script>
+
+
+
+
+<!-- Injecting site-wide before scripts -->
+
+
+<script id="d-js-ecwid-cb-glue" data-swh-uuid="e9dda817d85940dbbb11d3220b51a4e4">
+
+window.ec=window.ec||{},window.ec.config=ec.config||{},window.ec.config.tracking=ec.config.tracking||{},window.ec.config.tracking.ask_consent=!0;let _ecwidLoadedForCb=!1;function _acceptConsentForEcwid(e){e.preferences&&e.statistics&&!e.marketing?Ecwid.setTrackingConsent("ANALYTICS_ONLY"):!e.preferences||e.statistics||e.marketing?Ecwid.setTrackingConsent("ACCEPT"):Ecwid.setTrackingConsent("PERSONALIZATION_ONLY")}function _onEcwidLoadedCb(){Cookiebot&&Cookiebot.consented?"function"==typeof Ecwid.setTrackingConsent?_acceptConsentForEcwid(Cookiebot.consent):window.Ecwid.OnAPILoaded.add(function(){_acceptConsentForEcwid(Cookiebot.consent)}):Cookiebot&&Cookiebot.declined?Ecwid.setTrackingConsent("DECLINE"):_ecwidLoadedForCb=!0}window.addEventListener("message",e=>{"ecwid-script-loaded"===e.data.type&&_onEcwidLoadedCb()}),window.addEventListener("CookiebotOnAccept",async()=>{_ecwidLoadedForCb&&_acceptConsentForEcwid(Cookiebot.consent)},!1),window.addEventListener("CookiebotOnDecline",async()=>{_ecwidLoadedForCb&&Ecwid.setTrackingConsent("DECLINE")},!1);
+
+</script>
+<script id="CookiebotConfiguration" type="application/json" data-cookieconsent="ignore" data-swh-uuid="e9dda817d85940dbbb11d3220b51a4e4">
+
+{"TagConfiguration":[{"id":"d-js-core","ignore":true},{"id":"d-js-params","ignore":true},{"id":"d-js-jquery","ignore":true},{"id":"d-js-load-css","ignore":true},{"id":"d-js-dmapi","ignore":true},{"id":"d-js-datalayer-optimization","ignore":true}]}
+
+</script>
+<script data-cookieconsent="ignore" data-swh-uuid="e9dda817d85940dbbb11d3220b51a4e4">
+
+function _cbSetGtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],_cbSetGtag("consent","default",{"ad_personalization":"denied","ad_storage":"denied","ad_user_data":"denied","analytics_storage":"denied","functionality_storage":"denied","personalization_storage":"denied","security_storage":"denied","wait_for_update":500}),_cbSetGtag("set","ads_data_redaction",!0),_cbSetGtag("set","url_passthrough",!0)
+
+</script>
+<script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="0a3a5f19-d829-473c-bb43-df2700a3e588" data-blockingmode="auto" type="text/javascript" data-swh-uuid="e9dda817d85940dbbb11d3220b51a4e4">
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" id="d_track_campaign" data-entry-referrer>
+    (function() {
+        if (!window.location.search) {
+            return;
+        }
+        const cleanParams = window.location.search.substring(1); // Strip ?
+        const queryParams = cleanParams.split('&');
+
+        const expires = 'expires=' + new Date().getTime() + 24 * 60 * 60 * 1000;
+        const domain = 'domain=' + window.location.hostname;
+        const path = "path=/";
+
+        queryParams.forEach((param) => {
+            const [key, value = ''] = param.split('=');
+            if (key.startsWith('utm_')) {
+                const cookieName = "_dm_rt_" + key.substring(4);
+                const cookie = cookieName + "=" + value;
+                const joined = [cookie, expires, domain, path].join(";");
+                document.cookie = joined;
+            }
+        });
+    }());
+</script>
+
+<script type="text/javascript" >
+    var _dm_gaq = {};
+    var _gaq = _gaq || [];
+    var _dm_insite = [];
+</script>
+
+
+
+
+
+
+
+<!-- End Injecting site-wide to the head -->
+
+
+
+<script>
+    var _jquery = window.$;
+
+    var jqueryAliases = ['$', 'jquery', 'jQuery'];
+
+    jqueryAliases.forEach((alias) => {
+        Object.defineProperty(window, alias, {
+            get() {
+                return _jquery;
+            },
+            set() {
+                console.warn("Trying to over-write the global jquery object!");
+            }
+        });
+    });
+    window.jQuery.migrateMute = true;
+</script>
+
+
+
+
+<script>
+    window.cookiesNotificationMarkupPreview = 'null';
+</script>
+
+
+<script id='d-js-params'>
+    window.INSITE = window.INSITE || {};
+    window.INSITE.device = "desktop";
+
+    window.rtCommonProps = {};
+    rtCommonProps["runtimecollector.url"] = 'https://rtc.eu-multiscreensite.com';
+    rtCommonProps["performance.tabletPreview.removeScroll"] = 'false';
+    rtCommonProps["inlineEditGrid.snap"] =true;
+    rtCommonProps["popup.insite.cookie.ttl"] = '0.5';
+    rtCommonProps["common.mapbox.token"] = 'pk.eyJ1IjoiZGFubnliMTIzIiwiYSI6ImNqMGljZ256dzAwMDAycXBkdWxwbDgzeXYifQ.Ck5P-0NKPVKAZ6SH98gxxw';
+    rtCommonProps["common.mapbox.js.override"] =false;
+    rtCommonProps["common.here.appId"] = 'iYvDjIQ2quyEu0rg0hLo';
+    rtCommonProps["common.here.appCode"] = '1hcIxLJcbybmtBYTD9Z1UA';
+    rtCommonProps["ecommerce.ecwid.script"] = 'https://app.multiscreenstore.com/script.js';
+    rtCommonProps["common.build.dist.folder"] = 'production/6817';
+    rtCommonProps["common.resources.cdn.host"] = 'https://static.cdn-website.com';
+    rtCommonProps["common.resources.folder"] = 'https://static.cdn-website.com/mnlt/production/6817';
+    rtCommonProps["common.fonts.api.v2.url"] = 'https://de.cdn-website.com/fonts/css2?family=';
+    rtCommonProps["feature.flag.runtime.backgroundSlider.preload.slowly"] =true;
+    rtCommonProps["feature.flag.runtime.newAnimation.jitAnimation.enabled"] =true;
+    rtCommonProps["feature.flag.sites.google.analytics.gtag"] =true;
+    rtCommonProps["feature.flag.runOnReadyNewTask"] =true;
+    rtCommonProps["isAutomation.test"] =false;
+    rtCommonProps["booking.cal.api.domain"] = 'api.cal.eu';
+
+    
+    rtCommonProps['common.mapsProvider'] = 'mapbox';
+    
+    rtCommonProps['common.mapsProvider.version'] = '0.52.0';
+    rtCommonProps['common.geocodeProvider'] = 'mapbox';
+    rtCommonProps['server.for.resources'] = '';
+    rtCommonProps['feature.flag.lazy.widgets'] = true;
+    rtCommonProps['feature.flag.single.wow'] = false;
+    rtCommonProps['feature.flag.disallowPopupsInEditor'] = true;
+    rtCommonProps['feature.flag.mark.anchors'] = true;
+    rtCommonProps['captcha.public.key'] = '6LffcBsUAAAAAMU-MYacU-6QHY4iDtUEYv_Ppwlz';
+    rtCommonProps['captcha.invisible.public.key'] = '6LeiWB8UAAAAAHYnVJM7_-7ap6bXCUNGiv7bBPME';
+    rtCommonProps["images.sizes.small"] =160;
+    rtCommonProps["images.sizes.mobile"] =640;
+    rtCommonProps["images.sizes.tablet"] =1280;
+    rtCommonProps["images.sizes.desktop"] =1920;
+    rtCommonProps["import.images.storage.imageCDN"] = 'https://le-de.cdn-website.com/';
+    rtCommonProps["feature.flag.performance.logs"] =false;
+    rtCommonProps["site.widget.form.captcha.type"] = 'g_recaptcha';
+    rtCommonProps["friendly.captcha.site.key"] = 'FCMGSQG9GVNMFS8K';
+    rtCommonProps["cookiebot.mapbox.consent.category"] = 'marketing';
+    rtCommonProps["termly.mapbox.consent.category"] = 'performance';
+    // feature flags that's used out of runtime module (in  legacy files)
+    rtCommonProps["platform.monolith.personalization.dateTimeCondition.popupMsgAction.moveToclient.enabled"] =true;
+
+    window.rtFlags = {};
+    rtFlags["unsuspendEcwidStoreOnRuntime.enabled"] =false;
+    rtFlags["scripts.widgetCount.enabled"] =true;
+    rtFlags["fnb.animations.tracking.enabled"] =true;
+    rtFlags["ecom.ecwidNewUrlStructure.enabled"] = false;
+    rtFlags["ecom.ecwid.accountPage.emptyBaseUrl.enabled"] = true;
+    rtFlags["ecom.ecwid.accountPage.repeatOrderRedirect.enabled"] = false;
+    rtFlags["ecom.ecwid.oldStore.keepScrollOnLoad.enabled"] = true;
+    rtFlags["ecom.ecwid.storefrontV3.enabled"] = false;
+    rtFlags["ecom.monolith.legacy.js.api.disabled.for.new.sites"] = false;
+    rtFlags["geocode.search.localize"] =false;
+    rtFlags["feature.flag.runtime.newAnimation.asyncInit.setTimeout.enabled"] =false;
+    rtFlags["twitter.heightLimit.enabled"] = true;
+    rtFlags["streamline.monolith.personalization.supportMultipleConditions.enabled"] =false;
+    rtFlags["flex.animation.design.panel.layout"] =true;
+    rtFlags["runtime.cwv.report.cls.enabled"] =false;
+    rtFlags["runtime.cwv.report.lcp.enabled"] =false;
+    rtFlags["runtime.lcp.preload.selfheal.enabled"] =true;
+    rtFlags["runtime.lcp.preload.bootstrap.enabled"] =true;
+    rtFlags["runtime.lcp.preload.monitor.enabled"] =false;
+    rtFlags["runtime.customwidget.heightpin.enabled"] =true;
+    rtFlags["runtime.video.widget.lazy.enabled"] =true;
+    rtFlags["contact.form.useActiveForm"] =true;
+    rtFlags["contact.form.custom.errors.enabled"] =true;
+    rtFlags["runtime.ssr.productStore.internal.observer"] =true;
+    rtFlags["editor.widget.form.a11y"] =true;
+</script>
+<script src="https://static.cdn-website.com/mnlt/production/6817/_dm/s/rt/dist/scripts/d-js-one-runtime-unified-desktop.min.js"  id="d-js-core"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://static.cdn-website.com/mnlt/production/6817/_dm/s/rt/dist/scripts/d-js-jquery-migrate.min.js" ></script>
+
+
+
+
+
+<script>
+    
+    $(window).bind("orientationchange", function (e) {
+        $.layoutManager.initLayout();
+        
+    });
+    $(document).resize(function () {
+        
+    });
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" id="d_track_sp">
+    ;(function(p,l,o,w,i,n,g){if(!p[i]){p.GlobalSnowplowNamespace=p.GlobalSnowplowNamespace||[];
+        p.GlobalSnowplowNamespace.push(i);p[i]=function(){(p[i].q=p[i].q||[]).push(arguments)
+        };p[i].q=p[i].q||[];n=l.createElement(o);g=l.getElementsByTagName(o)[0];n.async=1;
+        n.src=w;g.parentNode.insertBefore(n,g)}}(window,document,"script","//d3uzsv7k2lpopp.cloudfront.net/sp-2.0.0-dm-0.1.min.js","snowplow"));
+    window.dmsnowplow  = window.snowplow;
+
+    dmsnowplow('newTracker', 'cf', 'd3uzsv7k2lpopp.cloudfront.net', { // Initialise a tracker
+        appId: 'e256bf8e5d474bb1b94d236567d1e275'
+    });
+
+    // snowplow queries element styles so we wait until CSS calculations are done.
+    requestAnimationFrame(() => {
+        dmsnowplow('trackPageView');
+        _dm_insite.forEach((rule) => {
+            // Specifically in popup only the client knows if it is shown or not so we don't always want to track its impression here
+            // the tracking is in popup.js
+            if (rule.actionName !== "popup") {
+                dmsnowplow('trackStructEvent', 'insite', 'impression', rule.ruleType, rule.ruleId);
+            }
+            window?.waitForDeferred?.('dmAjax', () => {
+                $.DM.events.trigger('event-ruleTriggered', {value: rule});
+            });
+        });
+    });
+</script>
+
+
+
+<div style="display:none;" id="P6iryBW0Wu"></div>
+
+
+
+
+
+
+
+
+
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" data-auto="pswp-close" title="Schließen (ESC)"></button>
+
+                <button class="pswp__button pswp__button--share" data-auto="pswp-share" title="Teilen"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Vollbild ein-/ausschalten"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Vergrößern/verkleinern"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Zurück (Pfeil nach links)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Weiter (Pfeil nach rechts)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+<div id="fb-root"
+        data-locale="de_DE"></div>
+<!-- Alias: e256bf8e5d474bb1b94d236567d1e275 -->
+<div class="dmPopupMask" id="dmPopupMask"></div>
+<div id="dmPopup" class="dmPopup" data-auto="popup">
+	<div class="dmPopupCloseWrapper"> <div class="dmPopupClose dm-common-icons-close oneIcon" data-auto="popup-close" onclick="dmHidePopup(event);"></div> </div>
+ 	<div class="dmPopupTitle"> <span></span> Share by:</div> 
+	<div class="data"></div>
+</div><script id="d_track_personalization">
+	window?.waitForDeferred?.('dmAjax', () => {
+		// Collects client data and updates cookies used by smart sites
+		window.expireDays = 365;
+		window.visitLength = 30 * 60000;
+		$.setCookie("dm_timezone_offset", (new Date()).getTimezoneOffset(), window.expireDays);
+			setSmartSiteCookiesInternal("dm_this_page_view","dm_last_page_view","dm_total_visits","dm_last_visit");
+	});
+</script>
+<script type="text/javascript">
+    
+    Parameters.NavigationAreaParams.MoreButtonText = 'MORE';
+    
+    Parameters.NavigationAreaParams.LessButtonText = 'LESS';
+    Parameters.HomeLinkText = 'Home';
+    </script>
+<!--  Begin Body End Markup -->
+<script>
+    jQuery(window).on('scroll',function(){ let scroll = jQuery(window).scrollTop(); if (scroll>600) { jQuery(".scrolltotop").fadeIn(); } else { jQuery(".scrolltotop").fadeOut(); } });
+</script><!--  End Body End Markup -->
+<!--  Site Wide Html Markup -->
+<div id="swh-4e0593d1fc9c40d9bf4da04e590ea954"><script src="https://cdn.displaycloud.com/lt/ipromote_event_tracker.js" type="text/javascript"></script>
+<script src="https://cdn.displaycloud.com/lt/event_selectors.js"></script></div><!--  Site Wide Html Markup -->
+<!--  Begin Product Custom HTML Markup -->
+<!-- START: Termly Preferences Floating icon -->
+<style>
+ #termly-code-snippet-support .termly-floating-preferences {
+    /* Override Termly's default blue icon with our brown cookie button.
+       !important is used to beat Termly's inline-equivalent specificity. */
+    background:
+    #000
+    url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48cGF0aCBmaWxsPSIjZmZmIiBkPSJtODMuNTI3IDczLjA1NWMtMy41MzUyLTEuNTUwOC02LjA5NzctNC43MjI3LTYuODc4OS04LjUtMC43ODUxNi0zLjc4MTIgMC4zMTI1LTcuNzA3IDIuOTM3NS0xMC41MzUgMC41NTQ2OS0wLjYwNTQ3IDAuNzM0MzctMS40NjQ4IDAuNDcyNjYtMi4yNDIyLTAuMjY1NjItMC43NzM0NC0wLjkyOTY5LTEuMzQ3Ny0xLjczODMtMS40ODgzLTUuNzUzOS0wLjk5MjE5LTkuOTUzMS01Ljk5MjItOS45MzM2LTExLjgzMiAwLjAxOTUzMS0xLjk1MzEgMC41MTk1My0zLjg2NzIgMS40NjA5LTUuNTc4MSAwLjM5NDUzLTAuNzM4MjggMC4zNDM3NS0xLjYzMjgtMC4xMjUtMi4zMjQyLTAuNDcyNjYtMC42OTE0MS0xLjI4OTEtMS4wNjI1LTIuMTE3Mi0wLjk2NDg0bC0wLjQ3MjY2IDAuMDYyNWMtMC4zMTY0MSAwLjA1MDc4MS0wLjY0MDYyIDAuMDgyMDMxLTAuOTYwOTQgMC4wODk4NDRoLTAuMDA3ODEzYy00LjYzNjcgMC4wMTk1MzEtOC44NjMzLTIuNjQ4NC0xMC44NDQtNi44Mzk4LTEuOTg0NC00LjE5MTQtMS4zNTk0LTkuMTQ4NCAxLjU5MzgtMTIuNzE5IDAuNTExNzItMC42Mjg5MSAwLjY0ODQ0LTEuNDg0NCAwLjM1MTU2LTIuMjM4My0wLjI5Njg4LTAuNzU3ODEtMC45ODA0Ny0xLjI5My0xLjc4MTItMS40MDIzLTEuOTgwNS0wLjI5Mjk3LTMuOTc2Ni0wLjQ0OTIyLTUuOTc2Ni0wLjQ2ODc1aC0wLjExMzI4Yy0xNS42ODQtMC4wMDM5MDctMzAuMTc2IDguMzU1NS0zOC4wMjcgMjEuOTMtNy44NTE2IDEzLjU3NC03Ljg3NSAzMC4zMDUtMC4wNTQ2ODggNDMuODk4IDcuODE2NCAxMy41OTQgMjIuMjg5IDIxLjk4NCAzNy45NzMgMjIuMDIzaDAuMTEzMjhjMTMuNzcgMC4wMzUxNTcgMjYuNzUtNi40Mzc1IDM1LTE3LjQ2NSAwLjQxNDA2LTAuNTQ2ODggMC41NTQ2OS0xLjI1IDAuMzg2NzItMS45MTQxLTAuMTcxODgtMC42NjAxNi0wLjYzMjgxLTEuMjEwOS0xLjI1NzgtMS40OTIyem0tNTguMjctOS4zODY3Yy0xLjI4NTIgMC0yLjQ0NTMtMC43NzczNC0yLjkzNzUtMS45NjQ4LTAuNDkyMTktMS4xODc1LTAuMjE4NzUtMi41NTQ3IDAuNjg3NS0zLjQ2NDggMC45MTAxNi0wLjkwNjI1IDIuMjc3My0xLjE3OTcgMy40NjQ4LTAuNjg3NSAxLjE4NzUgMC40OTIxOSAxLjk2NDggMS42NTIzIDEuOTY0OCAyLjkzNzUgMCAxLjc1MzktMS40MjU4IDMuMTc5Ny0zLjE3OTcgMy4xNzk3em02LjMxMjUtMjcuNzgxYy0xLjI4NTIgMC0yLjQ0NTMtMC43NzczNC0yLjkzNzUtMS45NjQ4LTAuNDkyMTktMS4xODc1LTAuMjE4NzUtMi41NTQ3IDAuNjkxNDEtMy40NjQ4IDAuOTEwMTYtMC45MDYyNSAyLjI3NzMtMS4xNzk3IDMuNDY0OC0wLjY4NzUgMS4xODc1IDAuNDkyMTkgMS45NjA5IDEuNjUyMyAxLjk2MDkgMi45Mzc1IDAgMS43NTM5LTEuNDIxOSAzLjE3OTctMy4xNzk3IDMuMTc5N3ptMTAuNDM0IDE4LjE2Yy0xLjI3NzMgMC0yLjQyNTgtMC43Njk1My0yLjkxNDEtMS45NDkyLTAuNDkyMTktMS4xNzk3LTAuMjE4NzUtMi41MzUyIDAuNjgzNTktMy40Mzc1IDAuOTAyMzQtMC45MDYyNSAyLjI1NzgtMS4xNzU4IDMuNDM3NS0wLjY4NzUgMS4xNzk3IDAuNDg4MjggMS45NDkyIDEuNjQwNiAxLjk0OTIgMi45MTggMCAxLjc0MjItMS40MTAyIDMuMTU2Mi0zLjE1NjIgMy4xNTYyem01LjczMDUgMjAuMTE3Yy0xLjI3MzQgMC0yLjQyNTgtMC43Njk1My0yLjkxNDEtMS45NDkyLTAuNDg4MjgtMS4xNzk3LTAuMjE4NzUtMi41MzkxIDAuNjgzNTktMy40NDE0IDAuOTAyMzQtMC45MDIzNCAyLjI2MTctMS4xNzE5IDMuNDQxNC0wLjY4MzU5IDEuMTc5NyAwLjQ4ODI4IDEuOTQ5MiAxLjY0MDYgMS45NDkyIDIuOTE4IDAgMC44MzU5NC0wLjMzMjAzIDEuNjQwNi0wLjkyNTc4IDIuMjMwNS0wLjU5Mzc1IDAuNTkzNzUtMS4zOTQ1IDAuOTI1NzgtMi4yMzQ0IDAuOTI1Nzh6bTEwLjg2My0xNi45MTRoMC4wMDM5MDZjLTEuMjg1MiAwLTIuNDQ1My0wLjc3NzM0LTIuOTM3NS0xLjk2NDgtMC40OTIxOS0xLjE4NzUtMC4yMTg3NS0yLjU1NDcgMC42ODc1LTMuNDY0OCAwLjkxMDE2LTAuOTA2MjUgMi4yNzczLTEuMTc5NyAzLjQ2NDgtMC42ODc1IDEuMTkxNCAwLjQ5MjE5IDEuOTY0OCAxLjY1MjMgMS45NjQ4IDIuOTM3NSAwIDEuNzUzOS0xLjQyNTggMy4xNzk3LTMuMTc5NyAzLjE3OTd6bTI5LjU3NC0yMi4xMjVjMC0xLjI4NTIgMC43NzczNC0yLjQ0NTMgMS45NjQ4LTIuOTM3NXMyLjU1NDctMC4yMTg3NSAzLjQ2NDggMC42OTE0MWMwLjkwNjI1IDAuOTEwMTYgMS4xNzk3IDIuMjc3MyAwLjY4NzUgMy40NjQ4LTAuNDkyMTkgMS4xODc1LTEuNjUyMyAxLjk2MDktMi45Mzc1IDEuOTYwOS0xLjc1MzkgMC0zLjE3OTctMS40MjE5LTMuMTc5Ny0zLjE3OTd6bS0xNC41MzktMTkuMDQzYzAtMS4yODUyIDAuNzc3MzQtMi40NDUzIDEuOTY0OC0yLjkzNzUgMS4xODc1LTAuNDkyMTkgMi41NTQ3LTAuMjE4NzUgMy40NjQ4IDAuNjkxNDEgMC45MDYyNSAwLjkwNjI1IDEuMTc5NyAyLjI3MzQgMC42ODc1IDMuNDYwOS0wLjQ5MjE5IDEuMTkxNC0xLjY1MjMgMS45NjQ4LTIuOTM3NSAxLjk2NDgtMC44NDM3NSAwLTEuNjUyMy0wLjMzNTk0LTIuMjQ2MS0wLjkyOTY5LTAuNTk3NjYtMC41OTc2Ni0wLjkzMzU5LTEuNDA2Mi0wLjkzMzU5LTIuMjV6bTIwLjg5OCAzOS41NzhjMCAxLjI4NTItMC43NzM0NCAyLjQ0NTMtMS45NjA5IDIuOTM3NS0xLjE5MTQgMC40OTIxOS0yLjU1ODYgMC4yMTg3NS0zLjQ2NDgtMC42OTE0MS0wLjkxMDE2LTAuOTA2MjUtMS4xODM2LTIuMjc3My0wLjY5MTQxLTMuNDY0OCAwLjQ5MjE5LTEuMTg3NSAxLjY1MjMtMS45NjA5IDIuOTM3NS0xLjk2MDkgMC44NDM3NSAwIDEuNjUyMyAwLjMzNTk0IDIuMjUgMC45Mjk2OSAwLjU5Mzc1IDAuNTk3NjYgMC45Mjk2OSAxLjQwNjIgMC45Mjk2OSAyLjI1eiIvPjwvc3ZnPgo=")
+      no-repeat center / 60% !important;
+    width: 45px !important;
+    height: 45px !important;
+    border-radius: 50% !important;
+    border: none !important;
+    padding: 0 !important;
+    /* Use fixed positioning so the button is anchored to the viewport, not a parent. */
+    position: fixed !important;
+    bottom: 20px !important;
+    display:block!important;
+    left: 20px !important;
+    /* Replace Termly's drop-shadow filter with a softer box-shadow matching the original design. */
+    filter: none !important;
+    box-shadow:
+      0 0 0 1px rgba(0, 0, 0, 0.06),
+      0 1px 2px -1px rgba(0, 0, 0, 0.06),
+      0 2px 4px 0 rgba(0, 0, 0, 0.04) !important;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+ #termly-code-snippet-support .termly-floating-preferences:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 16px 0 rgba(0, 0, 0, 0.2) !important;
+  }
+
+ #termly-code-snippet-support .termly-floating-preferences:focus-visible {
+  outline: 2px solid #000;
+  outline-offset: 3px;
+}
+
+  @media (prefers-reduced-motion: reduce) {
+   #termly-code-snippet-support .termly-floating-preferences {
+      transition: none;
+    }
+   #termly-code-snippet-support .termly-floating-preferences:hover {
+      transform: none;
+    }
+  }
+</style>
+<!-- END: Termly Preferences Floating icon --><!--  End Product Custom HTML Markup -->
+</body>
+</html>
